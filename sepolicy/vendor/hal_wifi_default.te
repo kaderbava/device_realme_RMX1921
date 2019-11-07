@@ -1,3 +1,4 @@
 set_prop(hal_wifi_default, vendor_wifi_prop)
 allow hal_wifi_default vendor_tombstone_data_file:dir { open search read };
 allow hal_wifi_default persist_vendor_debug_wifi_prop:file { open read getattr };
+allow hal_wifi_default proc_net:file rw_file_perms;
