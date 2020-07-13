@@ -6,8 +6,6 @@
 
 DEVICE_PATH := device/realme/RMX1921
 
-BOARD_VENDOR := realme
-
 BUILD_BROKEN_DUP_RULES := true
 BUILD_BROKEN_ENFORCE_SYSPROP_OWNER := true
 
