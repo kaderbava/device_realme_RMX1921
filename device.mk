@@ -416,6 +416,7 @@ PRODUCT_PACKAGES += \
     init.qcom.usb.sh \
     init.recovery.qcom.rc \
     init.target.rc \
+    logcat.rc \
     ueventd.qcom.rc \
     usb_compositions.conf
 
