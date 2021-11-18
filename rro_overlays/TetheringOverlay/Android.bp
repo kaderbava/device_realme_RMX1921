@@ -17,5 +17,5 @@
 runtime_resource_overlay {
     name: "TetheringConfigOverlay",
     theme: "TetheringConfigOverlay",
-    product_specific: true
+    vendor: true
 }
