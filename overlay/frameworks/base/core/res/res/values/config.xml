@@ -1142,8 +1142,8 @@
          Choices are: FULL, NORMAL, OFF. -->
     <string name="db_wal_sync_mode">OFF</string>
 
-    <!-- Whether Device support LiveDisplay or not -->
-    <bool name="config_liveDisplayAvailable">true</bool>
+    <!-- Whether the device supports Smart Pixels -->
+    <bool name="config_supportSmartPixels">true</bool>
 
     <!-- SystemInfo Sys Nodes -->
     <string name="config_sysCPUTemp">/sys/class/thermal/thermal_zone3/temp</string>
