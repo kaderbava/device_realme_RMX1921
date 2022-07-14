@@ -17,5 +17,6 @@
 
     <!-- ROM maintainer name -->
     <string name="build_maintainer_summary">Kader Bava(@Bava7325)</string>
+    <string name="build_maintainer_telegram">https://t.me/Bava7325</string>
 
 </resources>
