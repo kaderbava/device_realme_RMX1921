@@ -29,3 +29,6 @@ vendor.qti.diaghal::Idiag                                            u:object_r:
 
 # Turbo adapter
 vendor.google.google_battery::IGoogleBattery				u:object_r:hal_turbo_adapter_hwservice:s0
+
+# vpp
+::vppService						u:object_r:hal_vpp_hwservice:s0
