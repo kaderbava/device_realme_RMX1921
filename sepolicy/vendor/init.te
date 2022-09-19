@@ -31,6 +31,3 @@ allow init iorapd_data_file:file getattr;
 allow init sysfs_dm:dir relabelfrom;
 allow init sysfs_dm:file relabelfrom;
 allow init sysfs_io_sched_tuneable:file { setattr w_file_perms };
-
-# For mount tracefs tracefs /sys/kernel/tracing
-allow init debugfs_tracing_debug:dir mounton;
