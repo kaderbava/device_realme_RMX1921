@@ -14,7 +14,7 @@
 /dev/block/by-name/system                               /system                  ext4    ro,barrier=1                                         wait,first_stage_mount
 /dev/block/by-name/vendor                               /vendor                  ext4    ro,barrier=1                                         wait,first_stage_mount
 /dev/block/by-name/odm                                  /odm                     ext4    ro,barrier=1                                         wait,first_stage_mount
-/dev/block/bootdevice/by-name/userdata                  /data                    ext4    noatime,nosuid,noatime,nodev,barrier=1,noauto_da_alloc,async_discard,lazytime,errors=panic       latemount,wait,check,fileencryption=ice,quota,reservedsize=128M
+/dev/block/bootdevice/by-name/userdata                  /data                    ext4    noatime,nosuid,noatime,nodev,barrier=1,noauto_da_alloc,async_discard,lazytime,errors=panic       latemount,wait,check,fileencryption=ice,quota,formattable,reservedsize=128M
 /dev/block/bootdevice/by-name/userdata                  /data                    f2fs    noatime,nosuid,nodev,discard,noflush_merge,fsync_mode=nobarrier,background_gc=sync               latemount,wait,check,fileencryption=ice,quota,formattable,reservedsize=128M
 /dev/block/by-name/logdump                              /metadata                ext4    noatime,nosuid,nodev,discard,data=journal,commit=1                                               wait,check,formattable,first_stage_mount,metadata_csum
 /devices/platform/soc/8804000.sdhci/mmc_host*           /storage/sdcard1         vfat    nosuid,nodev                                         wait,voldmanaged=sdcard1:auto,encryptable=footer
