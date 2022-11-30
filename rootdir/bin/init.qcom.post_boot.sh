@@ -2335,8 +2335,6 @@ case "$target" in
             # cpuset settings
             echo 0-3 > /dev/cpuset/background/cpus
             echo 0-3 > /dev/cpuset/system-background/cpus
-            # choose idle CPU for top app tasks
-            echo 1 > /dev/stune/top-app/schedtune.prefer_idle
 
             # re-enable thermal & BCL core_control now
             echo 1 > /sys/module/msm_thermal/core_control/enabled
