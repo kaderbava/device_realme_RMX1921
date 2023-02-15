@@ -1,6 +1,3 @@
-# App Launch Blur
-ro.launcher.blur.appLaunch=false
-
 # IMS
 ro.telephony.block_binder_thread_on_incoming_calls=false
 
@@ -15,4 +12,3 @@ ro.lmk.log_stats=true
 
 # Seamless transfer
 sys.fflag.override.settings_seamless_transfer=true
-
