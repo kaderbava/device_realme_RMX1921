@@ -62,4 +62,8 @@
          Leave 1 if you have mA, put 1000 if you have µA -->
     <integer name="config_battCurrentDivider" translatable="false">1</integer>
 
+    <!-- Should we vibrate on an icon animation of the shelf. This should only be active if the
+     vibrator is capable of subtle vibrations -->
+    <bool name="config_vibrateOnIconAnimation">true</bool>
+
 </resources>
