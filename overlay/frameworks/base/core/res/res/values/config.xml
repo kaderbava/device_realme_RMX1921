@@ -1172,9 +1172,6 @@
     <!-- Telephony qualified networks service package name to bind to by default. -->
     <string name="config_qualified_networks_service_package">vendor.qti.iwlan</string>
 
-    <!-- Whether device has a notch -->
-    <bool name="config_haveNotch">true</bool>
-
     <!-- The device supports freeform window management. Windows have title bars and can be moved
          and resized. If you set this to true, you also need to add
          PackageManager.FEATURE_FREEFORM_WINDOW_MANAGEMENT feature to your device specification.
