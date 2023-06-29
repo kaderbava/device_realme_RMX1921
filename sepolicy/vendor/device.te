@@ -3,3 +3,5 @@ type goodix_device, dev_type;
 
 # Mdmreason device
 type mdmreason_device, dev_type;
+
+typeattribute system_block_device super_block_device_type;
