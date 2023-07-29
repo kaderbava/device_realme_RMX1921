@@ -15,8 +15,9 @@
 --> 
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
 
-    <!-- ROM maintainer name -->
+    <!-- About device screen, build maintainer -->
+    <string name="build_device_url">https://t.me/RealmeXTofficial</string>
     <string name="build_maintainer_summary">Kader Bava(@Bava7325)</string>
-    <string name="build_maintainer_telegram">https://t.me/Bava7325</string>
+    <string name="build_maintainer_donate_url">https://paypal.me/kaderbava</string>
 
 </resources>
