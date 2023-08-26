@@ -92,7 +92,7 @@ vendor/lib/libtinycompress.so
 
 # Audio HAL
 odm/lib/libaudioEngineerTest.so
-vendor/lib/hw/audio.primary.sdm710.so
+vendor/lib/hw/audio.primary.sdm710.so:vendor/lib/hw/audio.primary.qcom.so;FIX_SONAME
 vendor/lib/libaudio_log_utils.so
 
 # Audio FX modules (system) - from LA.QSSI.15.0.r1-13300-qssi.0
