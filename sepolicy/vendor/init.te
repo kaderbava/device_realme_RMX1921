@@ -27,3 +27,6 @@ allow init proc:file { write };
 allow init sysfs_dm:dir relabelfrom;
 allow init sysfs_dm:file relabelfrom;
 allow init sysfs_io_sched_tuneable:file { setattr w_file_perms };
+
+# Allow init to set attribute to sysfs_kprofiles
+allow init sysfs_kprofiles:file { setattr };
