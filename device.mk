@@ -108,6 +108,7 @@ TARGET_SCREEN_WIDTH := 1080
 PRODUCT_PACKAGES += \
     android.hardware.camera.provider@2.4-impl \
     android.hardware.camera.provider@2.4-service_64 \
+    Aperture \
     libcamera2ndk_vendor \
     libdng_sdk.vendor \
     libstdc++_vendor \
@@ -254,8 +255,8 @@ PRODUCT_PACKAGES += \
 #    vendor.lineage.health-service.default
 
 # LiveDisplay
-#PRODUCT_PACKAGES += \
-#    vendor.lineage.livedisplay@2.0-service-sdm
+PRODUCT_PACKAGES += \
+    vendor.lineage.livedisplay@2.0-service-sdm
 
 # Media
 PRODUCT_PACKAGES += \
