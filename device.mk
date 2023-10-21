@@ -109,6 +109,7 @@ TARGET_SCREEN_WIDTH := 1080
 PRODUCT_PACKAGES += \
     android.hardware.camera.provider@2.4-impl \
     android.hardware.camera.provider@2.4-service_64 \
+    Aperture \
     libcamera2ndk_vendor \
     libdng_sdk.vendor \
     libstdc++_vendor \
