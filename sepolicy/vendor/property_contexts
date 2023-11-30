@@ -26,6 +26,9 @@ persist.oppo.camera.                 u:object_r:vendor_camera_prop:s0
 oppo.switch.video.beauty				u:object_r:vendor_camera_prop:s0
 persist.bps.debug				u:object_r:vendor_camera_prop:s0
 
+# Hardware
+ro.hardware.chipname           u:object_r:exported_default_prop:s0
+
 # Radio props
 gsm.operator.numeric              u:object_r:radio_prop:s0
 
