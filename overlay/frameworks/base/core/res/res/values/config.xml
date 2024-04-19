@@ -1134,17 +1134,6 @@
     <!-- Specifies the maximum burn-in offset vertically. -->
     <integer name="config_burnInProtectionMaxVerticalOffset">40</integer>
 
-    <!-- Whether Device support LiveDisplay or not -->
-    <bool name="config_liveDisplayAvailable">true</bool>
-
-    <!-- SystemInfo Sys Nodes -->
-    <string name="config_sysCPUTemp">/sys/class/thermal/thermal_zone3/temp</string>
-    <string name="config_sysBatteryTemp">/sys/class/power_supply/battery/temp</string>
-    <string name="config_sysGPUFreq">/sys/kernel/gpu/gpu_clock</string>
-    <string name="config_sysGPULoad">/sys/kernel/gpu/gpu_busy</string>
-    <integer name="config_sysCPUTempMultiplier">10</integer>
-    <integer name="config_sysBatteryTempMultiplier">10</integer>
-
     <!-- Whether or not we should show vendor mismatch message -->
     <bool name="config_show_vendor_mismatch_message">false</bool>
 
@@ -1281,16 +1270,9 @@
     <bool name="config_enableHapticTextHandle">true</bool>
 
     <!-- Whether devices suports in-display fingerprint when screen is off -->
-    <bool name="config_supportScreenOffUdfps">true</bool>
-
-    <!-- Pocket Lock -->
-    <bool name="config_pocketModeSupported">false</bool>
-    <bool name="config_pocketUseLightSensor">false</bool>
+    <bool name="config_supportsScreenOffUdfps">true</bool>
 
     <!-- The max scale for the wallpaper when it's zoomed in -->
     <item name="config_wallpaperMaxScale" format="float" type="dimen">1.00</item>
-
-    <!-- Whether the device supports Smart Pixels -->
-    <bool name="config_supportSmartPixels">true</bool>
 
 </resources>
