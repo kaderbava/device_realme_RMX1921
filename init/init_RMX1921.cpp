@@ -72,4 +72,6 @@ void load_dalvikvm_properties() {
 void vendor_load_properties() {
   // dalvikvm props
   load_dalvikvm_properties();
+  // Set risingOS Maintainer Name
+  property_override("ro.rising.maintainer", "KaderBava");
 }
