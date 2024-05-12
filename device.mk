@@ -111,7 +111,6 @@ PRODUCT_PACKAGES += \
     android.hardware.graphics.mapper@2.0-impl-qti-display \
     gralloc.sdm710 \
     hwcomposer.qcom \
-    libvulkan \
     vendor.qti.hardware.memtrack-service \
     vendor.qti.hardware.display.allocator@1.0-service
 
