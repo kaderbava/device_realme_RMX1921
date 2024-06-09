@@ -6,10 +6,9 @@
 
 # Inherit some common Evolution X stuff
 TARGET_BOOT_ANIMATION_RES := 1080
-EXTRA_UDFPS_ANIMATIONS := true
-TARGET_SUPPORTS_QUICK_TAP := true
+TARGET_HAS_UDFPS := true
 TARGET_USES_MINI_GAPPS := true
-$(call inherit-product, vendor/evolution/config/common_full_phone.mk)
+$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
 # Inherit from RMX1921 device
 $(call inherit-product, $(LOCAL_PATH)/device.mk)
@@ -17,7 +16,7 @@ $(call inherit-product, $(LOCAL_PATH)/device.mk)
 PRODUCT_BRAND := realme
 PRODUCT_DEVICE := RMX1921
 PRODUCT_MANUFACTURER := realme
-PRODUCT_NAME := evolution_RMX1921
+PRODUCT_NAME := lineage_RMX1921
 PRODUCT_MODEL := RMX1921
 
 PRODUCT_SYSTEM_NAME := RMX1921

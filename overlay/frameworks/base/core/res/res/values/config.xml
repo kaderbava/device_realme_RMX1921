@@ -1085,9 +1085,6 @@
     <!-- Whether device supports double tap to wake -->
     <bool name="config_supportDoubleTapWake">true</bool>
 
-    <!-- Cleanup unused fingerprints -->
-    <bool name="config_cleanupUnusedFingerprints">false</bool>
-
     <!-- Whether device ignores the RSSNR signal implementation -->
     <bool name="config_ignoreRssnrSignalLevel">true</bool>
 
@@ -1096,16 +1093,6 @@
 
     <!-- Whether to intercept inputs on screen off -->
     <bool name="config_enableKeyHandler">true</bool>
-
-    <!-- Paths to the libraries that contain device specific key handlers -->
-    <string-array name="config_deviceKeyHandlerLibs" translatable="false">
-        <item>/system/priv-app/RealmeParts/RealmeParts.apk</item>
-    </string-array>
-
-    <!-- Names of the key handler classes -->
-    <string-array name="config_deviceKeyHandlerClasses" translatable="false">
-        <item>org.device.RealmeParts.KeyHandler</item>
-    </string-array>
 
     <!-- True if the device supports Sustained Performance Mode-->
     <bool name="config_sustainedPerformanceModeSupported">true</bool>
@@ -1142,9 +1129,6 @@
     <!-- Specifies the maximum burn-in offset vertically. -->
     <integer name="config_burnInProtectionMaxVerticalOffset">40</integer>
 
-    <!-- Whether the device supports Smart Pixels -->
-    <bool name="config_supportSmartPixels">true</bool>
-
     <!-- SystemInfo Sys Nodes -->
     <string name="config_sysCPUTemp">/sys/class/thermal/thermal_zone3/temp</string>
     <string name="config_sysBatteryTemp">/sys/class/power_supply/battery/temp</string>
@@ -1158,9 +1142,6 @@
 
     <!-- Wired/BT headset focus mode -->
     <bool name="config_deviceRingtoneFocusMode">true</bool>
-
-    <!-- Whether device has screen with higher aspect ratio -->
-    <bool name="config_haveHigherAspectRatioScreen">true</bool>
 
     <!-- IWLAN data service package name to bind to by default. If none is specified in an overlay, an
          empty string is passed in -->
@@ -1288,37 +1269,12 @@
          meanings. -->
     <integer name="config_defaultRingVibrationIntensity">3</integer>
 
-    <!-- The list of package IDs that are allowed to use aux cameras.
-         NOTE: If this list is empty then all apps will be able to use aux cameras. -->
-    <string-array name="config_cameraAuxPackageAllowList" translatable="false">
-        <item>org.codeaurora.snapcam</item>
-        <item>com.android.camera</item>
-        <item>org.lineageos.aperture</item>
-        <item>org.lineageos.aperture.dev</item>
-    </string-array>
-
-    <!-- The list of package IDs that are not allowed to use aux cameras. -->
-    <string-array name="config_cameraAuxPackageExcludeList" translatable="false">
-        <item>org.telegram.messenger</item>
-        <item>org.thunderdog.challegram</item>
-        <item>tw.nekomimi.nekogram</item>
-        <item>org.telegram.plus</item>
-        <item>it.owlgram.android</item>
-        <item>us.zoom.videomeetings</item>
-    </string-array>
-
     <!-- Enables or disables haptic effect when the text insertion/selection handle is moved
          manually by the user. Off by default, since the expected haptic feedback may not be
          available on some devices. -->
     <bool name="config_enableHapticTextHandle">true</bool>
 
     <!-- Whether devices suports in-display fingerprint when screen is off -->
-    <bool name="config_supportsScreenOffUdfps">true</bool>
-
-    <!-- Boost Framework -->
-    <bool name="config_supportsBoostFramework">true</bool>
-
-    <!-- Whether to enable Lineage Health Service -->
-    <bool name="config_lineageHealthSupported">true</bool>
+    <bool name="config_supportScreenOffUdfps">true</bool>
 
 </resources>

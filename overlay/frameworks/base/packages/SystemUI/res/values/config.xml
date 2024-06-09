@@ -50,7 +50,7 @@
 
     <!-- The battery current divider, some kernel report current value in mA other in µA.
          Leave 1 if you have mA, put 1000 if you have µA -->
-    <integer name="config_battCurrentDivider" translatable="false">1</integer>
+    <integer name="config_currentInfoDivider" translatable="false">1</integer>
 
     <!-- Should we vibrate on an icon animation of the shelf. This should only be active if the
      vibrator is capable of subtle vibrations -->
