@@ -69,9 +69,25 @@ void load_dalvikvm_properties() {
   property_override("dalvik.vm.heapminfree", "512k");
 }
 
+  // Device check
+  void device_check() {
+    // Check Varient
+    std::ifstream infile("/proc/oppoVersion/operatorName");
+    std::string check;
+
+    getline(infile, check);
+    if (!check.compare("34")) {
+        property_override("ro.boot.product.hardware.sku", "RMX1921EU");
+    } else {
+        property_override("ro.boot.product.hardware.sku", "RMX1921");
+    }
+   }
+
 void vendor_load_properties() {
   // dalvikvm props
   load_dalvikvm_properties();
   // Set risingOS Maintainer Name
   property_override("ro.rising.maintainer", "KaderBava");
+  // Device check
+  device_check();
 }
