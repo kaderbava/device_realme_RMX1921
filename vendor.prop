@@ -110,6 +110,7 @@ persist.bluetooth.a2dp_offload.disabled=true
 ro.bluetooth.a2dp_offload.supported=true
 
 # Camera
+vendor.camera.aux.packageexcludelist=org.telegram.messenger,org.thunderdog.challegram,us.zoom.videomeetings
 persist.camera.HAL3.enabled=1
 persist.camera.gyro.disable=0
 persist.vendor.camera.is_type=4
