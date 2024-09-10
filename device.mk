@@ -53,7 +53,6 @@ PRODUCT_PACKAGES += \
     libqcomvisualizer \
     libqcomvoiceprocessing \
     libvolumelistener \
-    libaudioparsers \
     libcirrusspkrprot \
     libspkrprot \
     libhdmiedid \
@@ -62,7 +61,6 @@ PRODUCT_PACKAGES += \
     libhfp \
     libbatterylistener \
     libsndmonitor \
-    libhdmipassthru \
     tinymix
 
 PRODUCT_COPY_FILES += \
@@ -154,9 +152,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_DEX_PREOPT_DEFAULT_COMPILER_FILTER := verify
 PRODUCT_USE_PROFILE_FOR_BOOT_IMAGE := true
 PRODUCT_DEX_PREOPT_BOOT_IMAGE_PROFILE_LOCATION := frameworks/base/config/boot-image-profile.txt
-PRODUCT_DEXPREOPT_SPEED_APPS += \
-    SettingsGoogle \
-    SystemUIGoogle
 
 # DRM
 PRODUCT_PACKAGES += \
@@ -243,14 +238,6 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     android.hardware.lights-service.realme_sdm710
 
-# Lineage Health
-PRODUCT_PACKAGES += \
-    vendor.lineage.health-service.default
-
-# LiveDisplay
-PRODUCT_PACKAGES += \
-    vendor.lineage.livedisplay@2.0-service-sdm
-
 # Media
 PRODUCT_PACKAGES += \
     libminijail \
@@ -302,9 +289,6 @@ PRODUCT_PACKAGES += \
     SecureElement \
     NfcNci \
     libchrome.vendor \
-    vendor.nxp.nxpese \
-    nqnfcee_access.xml \
-    nqnfcse_access.xml \
     Tag \
     nfc_nci_nxp
 
@@ -477,27 +461,6 @@ PRODUCT_SOONG_NAMESPACES += \
 
 # SystemUI
 EXCLUDE_SYSTEMUI_TESTS := true
-
-# Telephony
-PRODUCT_PACKAGES += \
-    extphonelib \
-    extphonelib-product \
-    extphonelib.xml \
-    extphonelib_product.xml \
-    ims-ext-common \
-    ims_ext_common.xml \
-    qti-telephony-hidl-wrapper \
-    qti_telephony_hidl_wrapper.xml \
-    qti-telephony-hidl-wrapper-prd \
-    qti_telephony_hidl_wrapper_prd.xml \
-    qti-telephony-utils \
-    qti_telephony_utils.xml \
-    qti-telephony-utils-prd \
-    qti_telephony_utils_prd.xml \
-    telephony-ext
-
-PRODUCT_BOOT_JARS += \
-    telephony-ext
 
 # Thermal
 PRODUCT_PACKAGES += \

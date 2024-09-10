@@ -4,15 +4,13 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
-# Inherit some common DerpFest stuff
+# Inherit some common YAAP stuff
 TARGET_BOOT_ANIMATION_RES := 1080
-EXTRA_UDFPS_ICONS := true
-TARGET_INCLUDE_STOCK_ARCORE := true
-TARGET_SUPPORTS_CALL_RECORDING := true
-$(call inherit-product, vendor/derp/config/common_full_phone.mk)
+$(call inherit-product, vendor/yaap/config/common_full_phone.mk)
 
-# Official-ify
-DERP_BUILDTYPE := Official
+# YAAP configs
+TARGET_PROVIDES_POWERHAL := true
+TARGET_EXCLUDE_QCOM_SEPOLICY := true
 
 # Inherit from RMX1921 device
 $(call inherit-product, $(LOCAL_PATH)/device.mk)
@@ -20,7 +18,7 @@ $(call inherit-product, $(LOCAL_PATH)/device.mk)
 PRODUCT_BRAND := realme
 PRODUCT_DEVICE := RMX1921
 PRODUCT_MANUFACTURER := realme
-PRODUCT_NAME := derp_RMX1921
+PRODUCT_NAME := yaap_RMX1921
 PRODUCT_MODEL := RMX1921
 
 PRODUCT_SYSTEM_NAME := RMX1921

@@ -5,8 +5,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/derp_RMX1921.mk
+    $(LOCAL_DIR)/yaap_RMX1921.mk
 
 COMMON_LUNCH_CHOICES := \
-    derp_RMX1921-userdebug \
-    derp_RMX1921-eng
+    yaap_RMX1921-user \
+    yaap_RMX1921-userdebug \
+    yaap_RMX1921-eng
