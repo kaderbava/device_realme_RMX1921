@@ -10,7 +10,6 @@ $(call inherit-product, vendor/yaap/config/common_full_phone.mk)
 
 # YAAP configs
 TARGET_PROVIDES_POWERHAL := true
-TARGET_EXCLUDE_QCOM_SEPOLICY := true
 
 # Inherit from RMX1921 device
 $(call inherit-product, $(LOCAL_PATH)/device.mk)

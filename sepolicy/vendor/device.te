@@ -3,3 +3,5 @@ type goodix_device, dev_type;
 
 # Mdmreason device
 type mdmreason_device, dev_type;
+
+type vendor_persist_block_device, dev_type;

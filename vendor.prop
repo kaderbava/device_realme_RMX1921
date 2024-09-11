@@ -183,7 +183,6 @@ ro.vendor.extension_library=libqti-perfd-client.so
 persist.vendor.radio.enableadvancedscan=false
 
 # SoC
-ro.soc.manufacturer=Qualcomm
 ro.soc.model=SDM710
 
 # Surfaceflinger properties
