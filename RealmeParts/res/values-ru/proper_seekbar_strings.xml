@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+  <string name="proper_seekbar_value">Значение: <xliff:g id="v">%s</xliff:g></string>
+  <string name="proper_seekbar_default_value">По умолчанию</string>
+  <string name="proper_seekbar_default_value_to_set">Значение по умолчанию: <xliff:g id="v">%s</xliff:g>\nНажмите и удерживайте, чтобы восстановить</string>
+  <string name="proper_seekbar_default_value_is_set">Значение по умолчанию восстановлено</string>
+</resources>
