@@ -1,1 +1,2 @@
+type turbo_adapter, domain;
 allow turbo_adapter hal_turbo_adapter_hwservice:hwservice_manager find;

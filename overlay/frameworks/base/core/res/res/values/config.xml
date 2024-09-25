@@ -1006,7 +1006,7 @@
         <item>"/system/framework/services.jar"</item>
         <item>"/apex/com.android.art/javalib/core-oj.jar"</item>
         <item>"/apex/com.android.art/javalib/core-libart.jar"</item>
-        <item>"/system_ext/priv-app/SystemUIGoogle/SystemUIGoogle.apk"</item>
+        <item>"/system_ext/priv-app/SystemUI/SystemUI.apk"</item>
         <item>"/system/bin/surfaceflinger"</item>
     </string-array>
 
@@ -1304,6 +1304,12 @@
         <item>us.zoom.videomeetings</item>
     </string-array>
 
+    <!-- The list of package IDs that are allowed to skip camera high frame rate checks. -->
+    <string-array name="config_cameraHFRPrivAppList" translatable="false">
+        <item>com.android.camera</item>
+        <item>org.lineageos.aperture</item>
+    </string-array>
+
     <!-- Enables or disables haptic effect when the text insertion/selection handle is moved
          manually by the user. Off by default, since the expected haptic feedback may not be
          available on some devices. -->
@@ -1312,10 +1318,7 @@
     <!-- Whether devices suports in-display fingerprint when screen is off -->
     <bool name="config_supportsScreenOffUdfps">true</bool>
 
-    <!-- Boost Framework -->
-    <bool name="config_supportsBoostFramework">true</bool>
-
-    <!-- Whether to enable Lineage Health Service -->
-    <bool name="config_lineageHealthSupported">true</bool>
+    <!-- Whether device supports in-display fingerprint -->
+    <bool name="config_supportsUdfps">true</bool>
 
 </resources>
