@@ -181,6 +181,9 @@ ro.vendor.extension_library=libqti-perfd-client.so
 # Radio
 persist.vendor.radio.enableadvancedscan=false
 
+# Screenshot
+debug.screenshot_rounded_corners=true
+
 # SoC
 ro.soc.manufacturer=Qualcomm
 ro.soc.model=SDM710
