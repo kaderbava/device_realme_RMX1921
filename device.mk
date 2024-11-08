@@ -516,10 +516,6 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PRODUCT_VNDK_VERSION := current
 PRODUCT_ENFORCE_PRODUCT_PARTITION_INTERFACE := true
 
-PRODUCT_PACKAGES += \
-    vndk_package \
-    com.android.vndk.current.on_vendor
-
 # Wallet
 PRODUCT_PACKAGES += \
     QuickAccessWallet
