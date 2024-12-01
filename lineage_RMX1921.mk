@@ -7,8 +7,8 @@
 # Inherit some common risingOS stuff
 TARGET_BOOT_ANIMATION_RES := 1080
 TARGET_HAS_UDFPS := true
-TARGET_PREBUILT_LAWNCHAIR_LAUNCHER := true
-TARGET_SHIP_LINEAGE_PREBUILTS := true
+WITH_GMS := true
+TARGET_DEFAULT_PIXEL_LAUNCHER := true
 $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
 # Inherit from RMX1921 device
