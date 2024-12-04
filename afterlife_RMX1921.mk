@@ -16,6 +16,7 @@ $(call inherit-product, $(LOCAL_PATH)/device.mk)
 # Official-ify
 AFTERLIFE_MAINTAINER := Bava7325
 TARGET_USE_ECHO := true
+TARGET_PREBUILTS_LAWNICONS := true
 
 PRODUCT_BRAND := realme
 PRODUCT_DEVICE := RMX1921
