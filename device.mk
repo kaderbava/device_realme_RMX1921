@@ -324,6 +324,10 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/qti_whitelist_system_ext.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/sysconfig/qti_whitelist_system_ext.xml \
     $(LOCAL_PATH)/configs/system_ext-privapp-permissions-qti.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/privapp-permissions-qti.xml
 
+# QTI fwk-detect
+PRODUCT_PACKAGES += \
+    libqti_vndfwk_detect.vendor
+
 # Ramdisk
 PRODUCT_PACKAGES += \
     fstab.qcom \
