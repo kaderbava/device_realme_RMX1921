@@ -1,0 +1,94 @@
+//
+// SPDX-FileCopyrightText: 2025 The LineageOS Project
+// SPDX-License-Identifier: Apache-2.0
+//
+
+// Init configuration files
+
+prebuilt_etc {
+    name: "init.oppo.rc",
+    src: "etc/init.oppo.rc",
+    sub_dir: "init/hw",
+    soc_specific: true,
+}
+
+prebuilt_etc {
+    name: "init.oppo.display.rc",
+    src: "etc/init.oppo.display.rc",
+    sub_dir: "init/hw",
+    device_specific: true,
+}
+
+prebuilt_etc {
+    name: "init.qcom.power.rc",
+    src: "etc/init.qcom.power.rc",
+    sub_dir: "init/hw",
+    soc_specific: true,
+}
+
+prebuilt_etc {
+    name: "init.qcom.rc",
+    src: "etc/init.qcom.rc",
+    sub_dir: "init/hw",
+    soc_specific: true,
+}
+
+prebuilt_etc {
+    name: "init.recovery.qcom.rc",
+    src: "etc/init.recovery.qcom.rc",
+    sub_dir: "init",
+    recovery: true,
+}
+
+prebuilt_etc {
+    name: "init.target.rc",
+    src: "etc/init.target.rc",
+    sub_dir: "init/hw",
+    soc_specific: true,
+}
+
+prebuilt_etc {
+    name: "ueventd.qcom.rc",
+    filename: "ueventd.rc",
+    src: "ueventd.qcom.rc",
+    soc_specific: true,
+}
+
+prebuilt_etc {
+    name: "fstab.qcom",
+    src: "etc/fstab.qcom",
+    soc_specific: true,
+}
+
+prebuilt_etc {
+    name: "init.RealmeParts.rc",
+    src: "etc/init.RealmeParts.rc",
+    sub_dir: "init/hw",
+    soc_specific: true,
+}
+
+// Init scripts
+
+sh_binary {
+    name: "init.qcom.early_boot.sh",
+    src: "bin/init.qcom.early_boot.sh",
+    soc_specific: true,
+}
+
+sh_binary {
+    name: "init.qcom.post_boot.sh",
+    src: "bin/init.qcom.post_boot.sh",
+    soc_specific: true,
+}
+
+sh_binary {
+    name: "init.qcom.sh",
+    src: "bin/init.qcom.sh",
+    soc_specific: true,
+}
+
+sh_binary {
+    name: "init.qti.chg_policy.sh",
+    src: "bin/init.qti.chg_policy.sh",
+    soc_specific: true,
+}
