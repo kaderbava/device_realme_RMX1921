@@ -27,13 +27,12 @@
 # ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 #
 
-function oppo_configure_zram_parameters() {
+function configure_zram_parameters() {
     MemTotalStr=`cat /proc/meminfo | grep MemTotal`
     MemTotal=${MemTotalStr:16:8}
 
     echo lz4 > /sys/block/zram0/comp_algorithm
-    echo 160 > /proc/sys/vm/swappiness
-    echo 60 > /proc/sys/vm/direct_swappiness
+    echo 100 > /proc/sys/vm/swappiness
     echo 0 > /proc/sys/vm/page-cluster
 
     if [ -f /sys/block/zram0/disksize ]; then
@@ -69,7 +68,7 @@ function configure_read_ahead_kb_values() {
 }
 
 # Set ZRAM parameters
-oppo_configure_zram_parameters
+configure_zram_parameters
 
 # Set read ahead parameters
 configure_read_ahead_kb_values
