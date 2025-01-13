@@ -1,0 +1,27 @@
+//
+// Copyright (C) 2025 The LineageOS Project
+//
+// SPDX-License-Identifier: Apache-2.0
+//
+
+cc_prebuilt_binary {
+    name: "RemovePackages",
+    overrides: [
+        "GoogleCamera",
+        "CalendarGooglePrebuilt",
+        "Photos",
+        "FilesPrebuilt",
+        "Maps",
+        "PrebuiltGmail",
+        "ScribePrebuilt_v7.0.633113815",
+        "SafetyHubSuwPrebuilt",
+        "DevicePolicyPrebuilt-v10052480",
+        "SoundAmplifierPrebuilt_v4.7.638126989",
+        "talkback",
+        "SwitchAccessPrebuilt_1.15.0.629986523",
+    ],
+    strip: {
+        none: true,
+    },
+    srcs: ["RemovePackages"],
+}
