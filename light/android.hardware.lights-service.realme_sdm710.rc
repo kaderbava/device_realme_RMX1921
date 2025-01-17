@@ -1,5 +1,0 @@
-service vendor.lights /vendor/bin/hw/android.hardware.lights-service.realme_sdm710
-class hal
-    user system
-    group system
-    shutdown critical
