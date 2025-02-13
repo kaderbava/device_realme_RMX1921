@@ -225,7 +225,7 @@ vendor/lib64/libsymphonypower.so
 vendor/lib64/libtriplecam_image_optical_zoom.so
 vendor/lib64/libtriplecam_optical_zoom_control.so
 vendor/lib64/libtriplecam_video_optical_zoom.so
-vendor/lib64/libvidhance.so
+vendor/lib64/libvidhance.so;DISABLE_CHECKELF
 vendor/lib64/qcom.camera.log.so
 vendor/lib64/vendor.oplus.hardware.commondcs@1.0.so
 
