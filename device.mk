@@ -526,9 +526,6 @@ PRODUCT_PACKAGES += \
     libwfdaac_vendor \
     vendor.qti.hardware.display.config-V5-ndk
 
-PRODUCT_BOOT_JARS += \
-    WfdCommon
-
 # Wi-Fi
 PRODUCT_PACKAGES += \
     android.hardware.wifi-service \
