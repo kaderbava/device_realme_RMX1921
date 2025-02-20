@@ -67,7 +67,7 @@ vendor/lib64/rfsa/adsp/libdsp_streamer_skel.so
 vendor/lib64/rfsa/adsp/libsns_device_mode_skel.so
 vendor/lib64/rfsa/adsp/libsns_low_lat_stream_skel.so
 
-# ANT+ (system) - from LA.QSSI.15.0.r1-12900-qssi.0
+# ANT+ (system) - from LA.QSSI.15.0.r1-13300-qssi.0
 system_ext/lib/com.qualcomm.qti.ant@1.0.so|8a3f8b4991e7dc2a1b100733c960c8090f1b02e7
 system_ext/lib64/com.qualcomm.qti.ant@1.0.so|7da2854d676426e03ea5d5ff0da49044b0c20c8a
 
@@ -112,7 +112,7 @@ vendor/lib/libaudio_log_utils.so
 vendor/lib64/hw/audio.primary.sdm710.so
 vendor/lib64/libaudio_log_utils.so
 
-# Audio FX modules (system) - from LA.QSSI.15.0.r1-12900-qssi.0
+# Audio FX modules (system) - from LA.QSSI.15.0.r1-13300-qssi.0
 system_ext/etc/permissions/audiosphere.xml|015ad7be4921039238bfa3d34d052d752453e49c
 system_ext/framework/audiosphere.jar|53ca88f91715ffc503d1298d22fcdb3cc5f5b57b
 
@@ -646,10 +646,10 @@ vendor/firmware/dpAP_full.mbn
 vendor/firmware/dpAP_mini.mbn
 vendor/firmware/dpMSA.mbn
 
-# DPM (system) - from LA.QSSI.15.0.r1-12900-qssi.0
+# DPM (system) - from LA.QSSI.15.0.r1-13300-qssi.0
 system/framework/tcmclient.jar|de34d4305038f6fcf3cb314fd352ac54cec7e928
 system/lib64/vendor.qti.diaghal-V1-ndk.so|ac3381b74861e15a8fb2842dd8d929c97a5f0fa1
-system_ext/bin/dpmd|421aed5a42b75096a1d050bfa96a57405f250721
+system_ext/bin/dpmd|bb4195a73a7e8a9abf02fb156cc27b7bb2c3a664
 system_ext/etc/dpm/dpm.conf|95e27da8c989e96c6faea6f0697bce11955b62a5
 system_ext/etc/init/dpmd.rc|738b638ff04cda368e22c03e16baf90ba157a6fc
 system_ext/etc/permissions/com.qti.dpmframework.xml|c4b7ad0879d00c1eba4f3fe3a88ddb8aa153629a
@@ -728,8 +728,8 @@ vendor/etc/seccomp_policy/vendor.qti.hardware.dsp.policy
 vendor/lib/vendor.qti.hardware.dsp@1.0.so
 vendor/lib64/vendor.qti.hardware.dsp@1.0.so
 
-# FM (system) - from LA.QSSI.14.0.r1-13500-qssi.0
-system_ext/lib64/fm_helium.so|5c9bf4a0ec6e9767b31571d127ac586c15eb3a8b
+# FM (system) - from LA.QSSI.15.0.r1-13300-qssi.0
+system_ext/lib64/fm_helium.so|63a119fb67a51136d738c0fa2b65c6713b3ab077
 system_ext/lib64/libfm-hci.so|96d572c590a04044f0db89356342e64ead887bc4
 system_ext/lib64/vendor.qti.hardware.fm@1.0.so|15f2b7444d7f274d7b90ef7512dd75323b3bc0c5
 
@@ -901,7 +901,7 @@ vendor/lib64/hw/vulkan.adreno.so|fcc99045aaf7eed0925ac2b64ff2af085212954a
 vendor/bin/hw/android.hardware.health@2.1-service
 vendor/etc/init/android.hardware.health@2.1-service.rc
 
-# IMS (system) - from LA.QSSI.15.0.r1-12900-qssi.0
+# IMS (system) - from LA.QSSI.15.0.r1-13300-qssi.0
 system_ext/app/ImsRcsService/ImsRcsService.apk|8a421431e6dcdadf281a55861c7256e24f6e223c
 system_ext/etc/permissions/vendor.qti.ims.rcsservice.xml|c5c9dd633c3f5450f315017cd4645a11de3d7ed3
 system_ext/framework/vendor.qti.ims.connectionaidlservice-V1-java.jar|3641e287eaeb8fb936a16cdf260f09719bf0f5d4
@@ -914,10 +914,10 @@ system_ext/framework/vendor.qti.ims.rcsuceaidlservice-V1-java.jar|26388f7cd87628
 system_ext/lib64/libimscamera_jni.so;SYMLINK=system_ext/priv-app/ims/lib/arm64/libimscamera_jni.so|0b61c9104edbcf3284daae09b253b2acbed65ad6
 system_ext/lib64/libimsmedia_jni.so;SYMLINK=system_ext/priv-app/ims/lib/arm64/libimsmedia_jni.so|7616e2b6a8cb3dd2c7c594eed1b16417a1257125
 system_ext/lib64/lib-imsvideocodec.so|2db5b8c344b6de05dba4f9a1449fd74e17d78819
-system_ext/lib64/lib-imsvt.so|b00b6f8e1ae88154302b2b3aa1b27ec0d96c4084
+system_ext/lib64/lib-imsvt.so|4974ce1e4fb36532a216b97f89c570e677cbaebb
 system_ext/lib64/lib-imsvtextutils.so|acce4410add2b5088adab8f7b4e37e36e0c09105
-system_ext/lib64/lib-imsvtutils.so|57e53dc5e1b4b35e0abefc4ef54e81e3e6523fb8
-system_ext/lib64/libdiag_system.so|7109fb099b110c59bd59fbb7180d1f2eef0f299a
+system_ext/lib64/lib-imsvtutils.so|8a1e06e3edf157b3cba2e608daf70ff0afa823d4
+system_ext/lib64/libdiag_system.so|d73c877aaf15e63bcdb0e790dc451d9b88917a10
 system_ext/lib64/vendor.qti.ImsRtpService-V1-ndk.so|c27f4e77d677a3e8d1c1c91ca1b40958dfb7f9d6
 system_ext/lib64/vendor.qti.diaghal@1.0.so|f33d7eb1654c5d9acba02376891df1bbe87d3f57
 system_ext/lib64/vendor.qti.imsrtpservice@3.0.so|961321653e924726bd01af6bfbb33c6740bc66af
@@ -1000,7 +1000,7 @@ vendor/lib64/libkeymasterprovision.so
 vendor/lib64/libkeymasterutils.so
 vendor/lib64/libqtikeymaster4.so
 
-# Latency - from LA.QSSI.15.0.r1-12900-qssi.0
+# Latency - from LA.QSSI.15.0.r1-13300-qssi.0
 system_ext/framework/vendor.qti.hardware.data.latency-V1.0-java.jar|faa392138fb5aa03834f7ba4b7342f48976914ec
 system_ext/framework/vendor.qti.latency-V2.0-java.jar|0fdfcb692c89064e7721860b537fee76ca3023e3
 system_ext/lib64/vendor.qti.hardware.data.latency@1.0.so|eb3b2ef8054d312be7230c52297b8a2bec3111a9
@@ -1052,7 +1052,7 @@ vendor/lib/libspcom.so
 vendor/lib64/libperipheral_client.so
 vendor/lib64/libspcom.so
 
-# Power-off Alarm (system) - from LA.QSSI.15.0.r1-12900-qssi.0
+# Power-off Alarm (system) - from LA.QSSI.15.0.r1-13300-qssi.0
 system_ext/app/PowerOffAlarm/PowerOffAlarm.apk|3894dbb20aee9fc22b2273323d41ae9810daf7cd
 
 # Power-off Alarm (vendor)
@@ -1062,7 +1062,7 @@ vendor/etc/init/vendor.qti.hardware.alarm@1.0-service.rc
 vendor/lib64/hw/vendor.qti.hardware.alarm@1.0-impl.so
 vendor/lib64/vendor.qti.hardware.alarm@1.0.so
 
-# QMI (system) - from LA.QSSI.15.0.r1-12900-qssi.0
+# QMI (system) - from LA.QSSI.15.0.r1-13300-qssi.0
 system_ext/etc/permissions/qti_libpermissions.xml|593bcb72cce68ceb0a70f50bcae7d460114e7c62
 system_ext/etc/permissions/qti_permissions.xml|e6ff4572352b1a4f91b6b9d7cbb1cad9924410a0
 
@@ -1102,13 +1102,13 @@ vendor/lib64/libqmi_csi.so
 vendor/lib64/libqmi_encdec.so
 vendor/lib64/libqmiservices.so
 
-# RIL (system) - from LA.QSSI.15.0.r1-12900-qssi.0
+# RIL (system) - from LA.QSSI.15.0.r1-13300-qssi.0
 system_ext/app/QtiTelephonyService/QtiTelephonyService.apk|d5829c38c2370cb9acd8b3753d62cef709815614
 system_ext/etc/permissions/qcrilhook.xml|30397e293b2c40e6b7a1d11c2a615cdd05de625a
 system_ext/etc/permissions/telephony_system-ext_privapp-permissions-qti.xml|e4d155e1ba9b6b6b215eec7d70004cba6b6176e5
 system_ext/framework/qcrilhook.jar|9787a32278ef29754c0b0fe665c6dae883c8e9c2
-system_ext/framework/qti-telephony-common.jar|09f549449468253084e7068a6fd3829f62db5b44
-system_ext/priv-app/ims/ims.apk|9a1043b7a3bb6625606e38ea7150f156406b13d0
+system_ext/framework/qti-telephony-common.jar|dd9958b4925d7eb2c201307ee7afd9707533a0f8
+system_ext/priv-app/ims/ims.apk|f2e80743a0dea58cd3efcd99028447b148a37409
 system_ext/priv-app/qcrilmsgtunnel/qcrilmsgtunnel.apk|f44654156c1c6689044ccdd1af56d49a90716572
 
 # RIL (vendor)
@@ -1412,7 +1412,7 @@ vendor/lib64/vendor.qti.hardware.vpp@1.2.so|ca1906012d0ab6dc9048aa49703833512308
 # WiFi
 vendor/bin/cnss-daemon
 
-# WiFi Display (system) - from LA.QSSI.15.0.r1-12900-qssi.0
+# WiFi Display (system) - from LA.QSSI.15.0.r1-13300-qssi.0
 system/framework/WfdCommon.jar;BOOT_JAR|45a5b6c22ee5e3eae618c07be1869a7175077828
 system_ext/bin/wfdservice|b7b774b649b601f5a64baf79aa5e1c530278a9bc
 system_ext/etc/init/wfdservice.rc|907def8565d8f91f531ca7dfad880af05d540b0c
