@@ -7,6 +7,8 @@
 # Inherit some common Pixelage stuff
 TARGET_BOOT_ANIMATION_RES := 1080
 TARGET_FACE_UNLOCK_SUPPORTED := true
+TARGET_SUPPORTS_QUICK_TAP := true
+PIXELAGE_MAINTAINER := KaderBava
 $(call inherit-product, vendor/pixelage/config/common_full_phone.mk)
 
 # Inherit from RMX1921 device
