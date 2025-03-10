@@ -352,6 +352,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/permissions/privapp_whitelist_org.device.Realmeparts.xml:system/etc/permissions/privapp_whitelist_org.device.Realmeparts.xml
 
+# Recovery
+PRODUCT_PACKAGES += \
+    libinit_RMX1921.recovery
+
 # Remove Unwanted Packages
 PRODUCT_PACKAGES += \
     RemovePackages
