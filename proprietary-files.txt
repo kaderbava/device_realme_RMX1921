@@ -172,7 +172,7 @@ vendor/lib64/libVDBlurlessAPI_v2.so
 vendor/lib64/libVDDualCameraBlurlessAPI.so
 vendor/lib64/libVDEyeEnhance.so
 vendor/lib64/libVDPostureDetection.so
-vendor/lib64/libVDSuperPhotoAPI.so;DISABLE_CHECKELF
+vendor/lib64/libVDSuperPhotoAPI.so
 vendor/lib64/libarcsoft_beautyshot.so
 vendor/lib64/libarcsoft_distortion_correction.so
 vendor/lib64/libarcsoft_distortion_correction_710.so
