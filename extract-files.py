@@ -64,6 +64,10 @@ blob_fixups: blob_fixups_user_type = {
         .clear_symbol_version('remote_handle64_close')
         .clear_symbol_version('remote_handle64_invoke')
         .clear_symbol_version('remote_handle64_open'),
+    'vendor/lib64/libVDSuperPhotoAPI.so': blob_fixup()
+        .clear_symbol_version('remote_handle_close')
+        .clear_symbol_version('remote_handle_invoke')
+        .clear_symbol_version('remote_handle_open'),
 }  # fmt: skip
 
 module = ExtractUtilsModule(
