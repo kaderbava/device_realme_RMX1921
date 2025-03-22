@@ -177,6 +177,9 @@ $(call soong_config_set,libinit,vendor_init_lib,//$(LOCAL_PATH):libinit_RMX1921)
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/keylayout/gpio-keys.kl:system/usr/keylayout/gpio-keys.kl
 
+# Kernel
+PRODUCT_ENABLE_UFFD_GC := false
+
 # Lights
 PRODUCT_PACKAGES += \
     android.hardware.light-service.lineage
