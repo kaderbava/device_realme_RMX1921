@@ -168,11 +168,11 @@ vendor/lib64/libPerfectlyClearCrux.so
 vendor/lib64/libPolarrRender.so
 vendor/lib64/libSNPE.so
 vendor/lib64/libSonyIMX471RmscLibrary.so
-vendor/lib64/libVDBlurlessAPI_v2.so
+vendor/lib64/libVDBlurlessAPI_v2.so;DISABLE_CHECKELF
 vendor/lib64/libVDDualCameraBlurlessAPI.so
 vendor/lib64/libVDEyeEnhance.so
 vendor/lib64/libVDPostureDetection.so
-vendor/lib64/libVDSuperPhotoAPI.so
+vendor/lib64/libVDSuperPhotoAPI.so;DISABLE_CHECKELF
 vendor/lib64/libarcsoft_beautyshot.so
 vendor/lib64/libarcsoft_distortion_correction.so
 vendor/lib64/libarcsoft_distortion_correction_710.so
@@ -185,10 +185,10 @@ vendor/lib64/libarcsoft_hdrplus_hvx_stub.so
 vendor/lib64/libarcsoft_high_dynamic_range.so
 vendor/lib64/libarcsoft_low_light_hdr.so
 vendor/lib64/libarcsoft_portraitSN_hvx_stub.so
-vendor/lib64/libarcsoft_portrait_super_night_raw.so
+vendor/lib64/libarcsoft_portrait_super_night_raw.so;DISABLE_CHECKELF
 vendor/lib64/libarcsoft_relighting_pro_image.so
 vendor/lib64/libarcsoft_smart_denoise.so
-vendor/lib64/libarcsoft_super_night_raw.so
+vendor/lib64/libarcsoft_super_night_raw.so;DISABLE_CHECKELF
 vendor/lib64/libbokehclient.so
 vendor/lib64/libc++_shared.so
 vendor/lib64/libcamera_core_hwi.so
@@ -216,7 +216,7 @@ vendor/lib64/liboppo_log_print.so
 vendor/lib64/liboppo_platform_hwi.so
 vendor/lib64/liboppoalgolib.so
 vendor/lib64/libopposfr.so
-vendor/lib64/libsnpe_dsp_domains_v2.so
+vendor/lib64/libsnpe_dsp_domains_v2.so;DISABLE_CHECKELF
 vendor/lib64/libsnpeml.so
 vendor/lib64/libstface_fd_api.so
 vendor/lib64/libswregistrationalgo.so
@@ -520,7 +520,7 @@ vendor/bin/qfp-daemon
 vendor/etc/init/vendor.oppo.hardware.biometrics.fingerprint@2.1-service.rc
 vendor/etc/permissions/qti_fingerprint_interface.xml
 vendor/lib/libarm_proxy_skel.so
-vendor/lib/libhvx_proxy_stub.so
+vendor/lib/libhvx_proxy_stub.so;DISABLE_CHECKELF
 vendor/lib/vendor.qti.hardware.fingerprint@1.0.so
 vendor/lib64/hw/fingerprint.goodix_G2.default.so
 vendor/lib64/hw/fingerprint.goodix_G3.default.so
