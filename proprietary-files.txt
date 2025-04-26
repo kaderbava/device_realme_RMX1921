@@ -136,6 +136,7 @@ odm/etc/camera/singleblur/merged_model
 odm/etc/camera/singleblur/merged_model_post
 odm/etc/camera/oppo_camera_config.xml
 odm/etc/camera/stereoParams.bin
+odm/lib64/libavutil.so
 odm/lib64/libormshalclient.so
 odm/lib64/libswresample.so
 odm/lib64/libswscale.so
@@ -201,7 +202,9 @@ vendor/lib64/libcamxswprocessalgo.so
 vendor/lib64/libcamxtintlessalgo.so
 vendor/lib64/libcom.qti.chinodeutils.so
 vendor/lib64/libcvface_api.so
+vendor/lib64/libd++.so
 vendor/lib64/libloadalgo_stub.so
+vendor/lib64/libml_util.so
 vendor/lib64/libmmcamera_faceproc.so
 vendor/lib64/libmmcamera_faceproc2.so
 vendor/lib64/libmpbase.so
