@@ -177,11 +177,6 @@ SRC_AUDIO_HAL_DIR := hardware/qcom-caf/sdm845/audio
 SRC_DISPLAY_HAL_DIR := hardware/qcom-caf/sdm845/display
 SRC_MEDIA_HAL_DIR := hardware/qcom-caf/sdm845/media
 
-# Health
-PRODUCT_PACKAGES += \
-    android.hardware.health@2.1-impl \
-    android.hardware.health@2.1-impl.recovery
-
 # Input
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/keylayout/gpio-keys.kl:system/usr/keylayout/gpio-keys.kl
