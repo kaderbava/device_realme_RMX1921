@@ -50,7 +50,7 @@ blob_fixups: blob_fixups_user_type = {
         .add_needed('libcrypto_shim.so'),
     'vendor/etc/seccomp_policy/atfwd@2.0.policy': blob_fixup()
          .add_line_if_missing('gettid: 1'),
-    'vendor/lib64/libVDBlurlessAPI_v2.so': blob_fixup()
+    'vendor/lib64/libarcsoft_relighting_pro_image.so': blob_fixup()
         .replace_needed('libstdc++.so', 'libstdc++_vendor.so'),
     'vendor/lib64/hw/camera.qcom.so': blob_fixup()
         .add_needed('libcamera_metadata_shim.so'),
