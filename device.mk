@@ -432,10 +432,6 @@ PRODUCT_ENFORCE_PRODUCT_PARTITION_INTERFACE := true
 PRODUCT_PACKAGES += \
     QuickAccessWallet
 
-# Wi-Fi Display
-PRODUCT_PACKAGES += \
-    android.media.audio.common.types-V3-cpp
-
 # Wi-Fi
 PRODUCT_PACKAGES += \
     android.hardware.wifi-service \
