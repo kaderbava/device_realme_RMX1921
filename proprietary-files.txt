@@ -1141,7 +1141,7 @@ vendor/bin/cnss-daemon
 
 # WiFi Display (system) - from LA.QSSI.15.0.r1-13300-qssi.0
 system/framework/WfdCommon.jar;BOOT_JAR|45a5b6c22ee5e3eae618c07be1869a7175077828
-system_ext/bin/wfdservice|b7b774b649b601f5a64baf79aa5e1c530278a9bc
+system_ext/bin/wfdservice|d1d6d2d62e4d988c56e9c7581a31c9914b018e2a
 system_ext/etc/init/wfdservice.rc|907def8565d8f91f531ca7dfad880af05d540b0c
 system_ext/etc/permissions/wfd-system-ext-privapp-permissions-qti.xml|6669d5ee462c981663b8ac573d84d334e4eed96c
 system_ext/etc/seccomp_policy/wfdservice.policy|37994de64d6bd127898bd556cd614db459fe07ec
