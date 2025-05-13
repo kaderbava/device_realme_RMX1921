@@ -60,6 +60,10 @@ blob_fixups: blob_fixups_user_type = {
         .replace_needed('libstdc++.so', 'libstdc++_vendor.so'),
     'vendor/lib64/hw/camera.qcom.so': blob_fixup()
         .add_needed('libcamera_metadata_shim.so'),
+    'vendor/lib64/libVDBlurlessAPI_v2.so': blob_fixup()
+        .clear_symbol_version('remote_handle64_close')
+        .clear_symbol_version('remote_handle64_invoke')
+        .clear_symbol_version('remote_handle64_open'),
 }  # fmt: skip
 
 module = ExtractUtilsModule(
