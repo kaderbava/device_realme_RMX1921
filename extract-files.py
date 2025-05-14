@@ -75,6 +75,12 @@ blob_fixups: blob_fixups_user_type = {
         .clear_symbol_version('remote_handle64_invoke')
         .clear_symbol_version('remote_handle64_open')
         .clear_symbol_version('remote_register_dma_handle'),
+    ('vendor/lib/libhvx_proxy_stub.so', 'vendor/lib64/libhvx_proxy_stub.so'): blob_fixup()
+        .clear_symbol_version('remote_handle64_close')
+        .clear_symbol_version('remote_handle64_invoke')
+        .clear_symbol_version('remote_handle64_open')
+        .clear_symbol_version('remote_register_dma_handle')
+        .clear_symbol_version('remote_register_dma_handle_attr'),
 }  # fmt: skip
 
 module = ExtractUtilsModule(
