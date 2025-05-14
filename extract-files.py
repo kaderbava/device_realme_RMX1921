@@ -68,6 +68,13 @@ blob_fixups: blob_fixups_user_type = {
         .clear_symbol_version('remote_handle_close')
         .clear_symbol_version('remote_handle_invoke')
         .clear_symbol_version('remote_handle_open'),
+    ('vendor/lib64/libarcsoft_portrait_super_night_raw.so', 'vendor/lib64/libarcsoft_super_night_raw.so'): blob_fixup()
+        .clear_symbol_version('remote_register_buf'),
+    'vendor/lib64/libsnpe_dsp_domains_v2.so': blob_fixup()
+        .clear_symbol_version('remote_handle64_close')
+        .clear_symbol_version('remote_handle64_invoke')
+        .clear_symbol_version('remote_handle64_open')
+        .clear_symbol_version('remote_register_dma_handle'),
 }  # fmt: skip
 
 module = ExtractUtilsModule(
