@@ -81,6 +81,8 @@ blob_fixups: blob_fixups_user_type = {
         .clear_symbol_version('remote_handle64_open')
         .clear_symbol_version('remote_register_dma_handle')
         .clear_symbol_version('remote_register_dma_handle_attr'),
+    'vendor/lib64/libvidhance.so': blob_fixup()
+        .add_needed('libcomparetf2_shim.so'),
 }  # fmt: skip
 
 module = ExtractUtilsModule(
