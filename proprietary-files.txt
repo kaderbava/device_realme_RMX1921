@@ -185,10 +185,10 @@ vendor/lib64/libarcsoft_hdrplus_hvx_stub.so
 vendor/lib64/libarcsoft_high_dynamic_range.so
 vendor/lib64/libarcsoft_low_light_hdr.so
 vendor/lib64/libarcsoft_portraitSN_hvx_stub.so
-vendor/lib64/libarcsoft_portrait_super_night_raw.so;DISABLE_CHECKELF
+vendor/lib64/libarcsoft_portrait_super_night_raw.so
 vendor/lib64/libarcsoft_relighting_pro_image.so
 vendor/lib64/libarcsoft_smart_denoise.so
-vendor/lib64/libarcsoft_super_night_raw.so;DISABLE_CHECKELF
+vendor/lib64/libarcsoft_super_night_raw.so
 vendor/lib64/libbokehclient.so
 vendor/lib64/libc++_shared.so
 vendor/lib64/libcamera_core_hwi.so
@@ -216,7 +216,7 @@ vendor/lib64/liboppo_log_print.so
 vendor/lib64/liboppo_platform_hwi.so
 vendor/lib64/liboppoalgolib.so
 vendor/lib64/libopposfr.so
-vendor/lib64/libsnpe_dsp_domains_v2.so;DISABLE_CHECKELF
+vendor/lib64/libsnpe_dsp_domains_v2.so
 vendor/lib64/libsnpeml.so
 vendor/lib64/libstface_fd_api.so
 vendor/lib64/libswregistrationalgo.so
