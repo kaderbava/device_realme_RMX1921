@@ -27,9 +27,6 @@ vendor/lib64/libsdsprpc.so
 # ADSP Modules
 odm/lib/libbsproxy.so
 odm/lib64/libbsproxy.so
-system_ext/lib/rfsa/adsp/libaiboost_skel.so
-system_ext/lib/rfsa/adsp/libaiboost_skel_v65.so
-system_ext/lib/rfsa/adsp/libaiboost_skel_v66.so
 vendor/lib/rfsa/adsp/capi_v2_aptX_Classic.so
 vendor/lib/rfsa/adsp/capi_v2_aptX_HD.so
 vendor/lib/rfsa/adsp/libVC1Dec.so
@@ -63,11 +60,6 @@ vendor/lib/rfsa/adsp/libsnpe_dsp_v65_domains_v2_skel.so
 vendor/lib/rfsa/adsp/libsns_device_mode_skel.so
 vendor/lib/rfsa/adsp/libsns_low_lat_stream_skel.so
 vendor/lib/rfsa/adsp/libthread_blur_skel.so
-vendor/lib64/rfsa/adsp/libBeautyShot_skel.so
-vendor/lib64/rfsa/adsp/libdsp_streamer_add_constant.so
-vendor/lib64/rfsa/adsp/libdsp_streamer_skel.so
-vendor/lib64/rfsa/adsp/libsns_device_mode_skel.so
-vendor/lib64/rfsa/adsp/libsns_low_lat_stream_skel.so
 
 # ANT+ (system) - from LA.QSSI.15.0.r1-13300-qssi.0
 system_ext/lib64/com.qualcomm.qti.ant@1.0.so|7da2854d676426e03ea5d5ff0da49044b0c20c8a
