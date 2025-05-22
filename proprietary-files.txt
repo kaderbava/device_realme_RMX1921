@@ -294,12 +294,6 @@ vendor/lib64/camera/com.qti.tuned.sunny_hi846.bin
 vendor/lib64/camera/com.qti.tuned.truly_imx471.bin
 
 # Camera (Device)
-vendor/lib/camera/com.qti.sensormodule.qtech_s5kgw1.bin
-vendor/lib/camera/com.qti.sensormodule.sunny_s5kgw1.bin
-vendor/lib/camera/com.qti.sensormodule.sunny_s5kgw1_evt0_2.bin
-vendor/lib/camera/com.qti.tuned.qtech_s5kgw1.bin
-vendor/lib/camera/com.qti.tuned.sunny_s5kgw1.bin
-vendor/lib/hw/vendor.oppo.hardware.camera.oppoAlgoProcessService@1.0-impl.so
 vendor/lib64/camera/com.qti.sensormodule.qtech_s5kgw1.bin
 vendor/lib64/camera/com.qti.sensormodule.sunny_s5kgw1.bin
 vendor/lib64/camera/com.qti.sensormodule.sunny_s5kgw1_evt0_2.bin
@@ -625,7 +619,6 @@ vendor/lib/libgpudataproducer.so|c8623c9b2e8f330e7f5e77e5d435677719bf5688
 vendor/lib/libgsl.so|777dab024670cceb8c60054cfadcccef33151640
 vendor/lib/libllvm-glnext.so|a20bdbe458c401e9c1726f475f50fb52f9f6fa12
 vendor/lib/libllvm-qcom.so|063963a7d6dfa90c6fa2cbca55943b23a870e02a
-vendor/lib/libpvr.so|9d7e50e1deb16ef03e05141e1babcc49160f840c
 vendor/lib64/egl/libEGL_adreno.so;SYMLINK=vendor/lib64/libEGL_adreno.so|96a44c8e3c18c534eb1f333956541955e9f5bd7e
 vendor/lib64/egl/libGLESv2_adreno.so;SYMLINK=vendor/lib64/libGLESv2_adreno.so|ba9e5618266e50a4d2ef723756e08979e0b4d12b
 vendor/lib64/egl/libq3dtools_adreno.so;SYMLINK=vendor/lib64/libq3dtools_adreno.so|046be35d03cbea2c73a1339eefa1bffc87ab6ebc
