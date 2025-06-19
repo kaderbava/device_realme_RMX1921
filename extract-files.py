@@ -55,6 +55,7 @@ blob_fixups: blob_fixups_user_type = {
     'system_ext/lib/libwfdmmsrc_system.so': blob_fixup()
         .add_needed('libgui_shim.so'),
     'system_ext/lib/libwfdservice.so': blob_fixup()
+        .add_needed('libaudioclient_shim.so')
         .replace_needed('android.media.audio.common.types-V3-cpp.so', 'android.media.audio.common.types-V4-cpp.so'),
     'vendor/etc/seccomp_policy/atfwd@2.0.policy': blob_fixup()
          .add_line_if_missing('gettid: 1'),
