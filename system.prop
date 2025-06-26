@@ -91,9 +91,6 @@ ro.iorapd.enable=false
 iorapd.readahead.enable=false
 
 # LMKD
-ro.config.low_ram=false
-ro.lmk.use_minfree_levels=true
-ro.lmk.kill_timeout_ms=100
 ro.lmk.swap_util_max=90
 
 # Media
