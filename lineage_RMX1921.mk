@@ -6,8 +6,8 @@
 
 # Inherit some common LineageOS stuff
 TARGET_BOOT_ANIMATION_RES := 1080
-TARGET_SUPPORTS_QUICK_TAP := true
 TARGET_HAS_UDFPS := true
+TARGET_DISABLE_MATLOG := true
 $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
 # Inherit from RMX1921 device
