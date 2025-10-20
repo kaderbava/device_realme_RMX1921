@@ -193,6 +193,20 @@ PRODUCT_PACKAGES += \
 
 $(call soong_config_set,livedisplay_sdm,enable_dm,false)
 
+# Logging
+SPAMMY_LOG_TAGS := \
+    AccessPersistence \
+    AiAiEcho \
+    AppOps \
+    AppOpService\
+    HWUI \
+    ResilientAtomicFile
+
+ifneq ($(TARGET_BUILD_VARIANT),eng)
+PRODUCT_VENDOR_PROPERTIES += \
+    $(foreach tag,$(SPAMMY_LOG_TAGS),log.tag.$(tag)=S)
+endif
+
 # Media
 PRODUCT_PACKAGES += \
     libminijail \
