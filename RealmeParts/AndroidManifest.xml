@@ -34,14 +34,14 @@
     <application
         android:icon="@drawable/ic_realmeparts"
         android:label="@string/customize_title"
-        android:theme="@style/Theme.SubSettingsBase">
+        android:theme="@style/Theme.SubSettingsBase.Expressive">
 
         <!-- Realme Parts -->
         <activity
             android:name=".RealmePartsActivity"
             android:label="@string/device_title"
             android:exported="true"
-            android:theme="@style/Theme.SubSettingsBase">
+            android:theme="@style/Theme.SubSettingsBase.Expressive">
             <intent-filter>
                 <action android:name="android.service.quicksettings.action.QS_TILE_PREFERENCES" />
                 <action android:name="com.android.settings.action.EXTRA_SETTINGS" />
@@ -57,11 +57,11 @@
         </activity>
 
         <activity android:name=".RealmeParts" 
-                  android:theme="@style/Theme.SubSettingsBase"
+                  android:theme="@style/Theme.SubSettingsBase.Expressive"
                   android:exported="true"/>
         <activity android:name=".KeyHandler" 
                   android:exported="true"
-                  android:theme="@style/Theme.SubSettingsBase"/>
+                  android:theme="@style/Theme.SubSettingsBase.Expressive"/>
 
         <receiver android:name="org.device.RealmeParts.Startup" 
                   android:exported="true">
@@ -74,7 +74,7 @@
             android:name=".Touch.ScreenOffGestureSettings"
             android:label="@string/screen_off_gestures"
             android:exported="true"
-            android:theme="@style/Theme.SubSettingsBase">
+            android:theme="@style/Theme.SubSettingsBase.Expressive">
             <intent-filter>
                 <action android:name="com.android.settings.action.EXTRA_SETTINGS" />
             </intent-filter>
@@ -83,7 +83,7 @@
         <activity
             android:name=".audio.SoundControlSettingsActivity"
             android:exported="true"
-            android:theme="@style/Theme.SubSettingsBase"
+            android:theme="@style/Theme.SubSettingsBase.Expressive"
             android:label="@string/audio_gain_settings">
             <intent-filter>
                 <action android:name="com.android.settings.action.IA_SETTINGS" />
@@ -92,7 +92,7 @@
 
         <activity
             android:name=".kcal.DisplayCalibration"
-            android:theme="@style/Theme.SubSettingsBase"
+            android:theme="@style/Theme.SubSettingsBase.Expressive"
             android:label="@string/kcal_title"
             android:exported="true">
             <intent-filter>
@@ -104,7 +104,7 @@
         <activity
             android:name=".speaker.ClearSpeakerActivity"
             android:label="@string/clear_speaker_title"
-            android:theme="@style/Theme.SubSettingsBase"
+            android:theme="@style/Theme.SubSettingsBase.Expressive"
             android:exported="true">
             <intent-filter>
                 <action android:name="com.android.settings.action.IA_SETTINGS" />
@@ -114,7 +114,7 @@
         <activity
             android:name=".vibrator.VibratorSettingsActivity"
             android:label="@string/vibration_title"
-            android:theme="@style/Theme.SubSettingsBase"
+            android:theme="@style/Theme.SubSettingsBase.Expressive"
             android:exported="true">
             <intent-filter>
                 <action android:name="com.android.settings.action.IA_SETTINGS" />
