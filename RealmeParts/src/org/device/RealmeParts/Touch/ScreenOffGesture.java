@@ -16,11 +16,11 @@
 
 package org.device.RealmeParts.Touch;
 
-import android.app.Activity;
 import android.app.AlertDialog;
 import android.app.Dialog;
 import android.app.DialogFragment;
 import android.content.DialogInterface;
+import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.graphics.Bitmap;
@@ -105,7 +105,7 @@ public class ScreenOffGesture extends PreferenceFragmentCompat implements
         mPicker = new ShortcutPickerHelper(getActivity(), this);
 
         mScreenOffGestureSharedPreferences = getActivity().getSharedPreferences(
-                Utils.PREFERENCES, Activity.MODE_PRIVATE);
+                Utils.PREFERENCES, Context.MODE_PRIVATE);
 
         sFinalActionDialogArray = new Utils.FilteredDeviceFeaturesArray ();
         sFinalActionDialogArray = Utils.filterUnsupportedDeviceFeatures(getActivity(),
