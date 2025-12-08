@@ -32,7 +32,7 @@ import android.view.MenuItem;
 import androidx.preference.Preference;
 import androidx.preference.Preference.OnPreferenceChangeListener;
 import androidx.preference.Preference.OnPreferenceClickListener;
-import androidx.preference.PreferenceFragment;
+import androidx.preference.PreferenceFragmentCompat;
 import androidx.preference.PreferenceScreen;
 import androidx.preference.SwitchPreferenceCompat;
 
@@ -44,7 +44,7 @@ import org.device.RealmeParts.Touch.util.ShortcutPickerHelper;
 import org.device.RealmeParts.Touch.util.Utils;
 
 
-public class ScreenOffGesture extends PreferenceFragment implements
+public class ScreenOffGesture extends PreferenceFragmentCompat implements
         OnPreferenceChangeListener, OnPreferenceClickListener,
         ShortcutPickerHelper.OnPickListener {
 
@@ -126,7 +126,7 @@ public class ScreenOffGesture extends PreferenceFragment implements
         }
 
         // Load the preferences from an XML resource
-        addPreferencesFromResource(R.xml.screen_off_gesture);
+        setPreferencesFromResource(R.xml.screen_off_gesture, rootKey);
         prefs = getPreferenceScreen();
 
         mEnableDt2w = (SwitchPreferenceCompat) prefs.findPreference(PREF_DT2W_ENABLE);
@@ -392,7 +392,7 @@ public class ScreenOffGesture extends PreferenceFragment implements
         DialogFragment newFragment =
                 MyAlertDialogFragment.newInstance(id, settingsKey, dialogTitle);
         newFragment.setTargetFragment(this, 0);
-        newFragment.show(getFragmentManager(), "dialog " + id);
+        newFragment.show(getSupportFragmentManager(), "dialog " + id);
     }
 
     public static class MyAlertDialogFragment extends DialogFragment {

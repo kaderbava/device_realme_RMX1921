@@ -34,7 +34,7 @@ import android.widget.AdapterView;
 import android.widget.AdapterView.OnItemClickListener;
 import android.widget.ListView;
 import android.util.Log;
-import androidx.preference.PreferenceFragment;
+import androidx.preference.PreferenceFragmentCompat;
 import androidx.preference.PreferenceManager;
 import androidx.preference.SwitchPreferenceCompat;
 import androidx.preference.ListPreference;
@@ -51,7 +51,7 @@ import org.device.RealmeParts.audio.SoundControlSettingsActivity;
 import org.device.RealmeParts.kcal.DisplayCalibration;
 import org.device.RealmeParts.Startup;
 
-public class RealmeParts extends PreferenceFragment
+public class RealmeParts extends PreferenceFragmentCompat
         implements Preference.OnPreferenceChangeListener {
 
     private static final String KEY_CATEGORY_GRAPHICS = "graphics";
@@ -78,7 +78,7 @@ public class RealmeParts extends PreferenceFragment
     @Override
     public void onCreatePreferences(Bundle savedInstanceState, String rootKey) {
         final SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(this.getContext());
-        addPreferencesFromResource(R.xml.Realme_preferences);
+        setPreferencesFromResource(R.xml.Realme_preferences, rootKey);
 
         mDCModeSwitch = (TwoStatePreference) findPreference(KEY_DC_SWITCH);
         mDCModeSwitch.setEnabled(DCModeSwitch.isSupported());

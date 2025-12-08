@@ -31,10 +31,10 @@ public class SoundControlSettingsActivity extends CollapsingToolbarBaseActivity 
 
         getActionBar().setDisplayHomeAsUpEnabled(true);
 
-        Fragment fragment = getFragmentManager().findFragmentById(com.android.settingslib.collapsingtoolbar.R.id.content_frame);
+        Fragment fragment = getSupportFragmentManager().findFragmentById(com.android.settingslib.collapsingtoolbar.R.id.content_frame);
         if (fragment == null) {
             mSoundControlSettingsFragment = new SoundControlSettings();
-            getFragmentManager().beginTransaction()
+            getSupportFragmentManager().beginTransaction()
                     .add(com.android.settingslib.collapsingtoolbar.R.id.content_frame, mSoundControlSettingsFragment)
                     .commit();
         } else {
