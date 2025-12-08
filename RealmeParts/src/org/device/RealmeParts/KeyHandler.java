@@ -18,7 +18,6 @@ package org.device.RealmeParts;
 import android.annotation.SuppressLint;
 import android.database.ContentObserver;
 import android.content.BroadcastReceiver;
-import android.app.Activity;
 import android.app.NotificationManager;
 import android.content.Context;
 import android.content.pm.PackageManager.NameNotFoundException;

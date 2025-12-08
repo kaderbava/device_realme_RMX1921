@@ -17,7 +17,6 @@
 */
 package org.device.RealmeParts;
 
-import android.app.Activity;
 import android.provider.Settings;
 import android.text.TextUtils;
 import android.content.BroadcastReceiver;
@@ -68,7 +67,7 @@ public class Startup extends BroadcastReceiver {
 
         enableComponent(context, ScreenOffGesture.class.getName());
         SharedPreferences screenOffGestureSharedPreferences = context.getSharedPreferences(
-                Utils.PREFERENCES, Activity.MODE_PRIVATE);
+                Utils.PREFERENCES, Context.MODE_PRIVATE);
         KernelControl.enableGestures(
                 screenOffGestureSharedPreferences.getBoolean(
                         ScreenOffGesture.PREF_GESTURE_ENABLE, false));
