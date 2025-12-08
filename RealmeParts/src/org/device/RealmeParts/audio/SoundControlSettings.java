@@ -19,7 +19,7 @@ package org.device.RealmeParts.audio;
 import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
-import androidx.preference.PreferenceFragment;
+import androidx.preference.PreferenceFragmentCompat;
 import androidx.preference.Preference;
 import androidx.preference.PreferenceCategory;
 
@@ -27,7 +27,7 @@ import org.device.RealmeParts.audio.utils.CustomSeekBarPreference;
 
 import org.device.RealmeParts.R;
 
-public class SoundControlSettings extends PreferenceFragment implements
+public class SoundControlSettings extends PreferenceFragmentCompat implements
         Preference.OnPreferenceChangeListener {
 
     public static final String PREF_HEADPHONE_GAIN = "headphone_gain";
