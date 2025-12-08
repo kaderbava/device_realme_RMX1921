@@ -27,7 +27,7 @@ import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
-import androidx.preference.PreferenceFragment;
+import androidx.preference.PreferenceFragmentCompat;
 import androidx.preference.PreferenceManager;
 
 public class RealmePartsActivity extends CollapsingToolbarBaseActivity {
@@ -40,10 +40,10 @@ public class RealmePartsActivity extends CollapsingToolbarBaseActivity {
 
         getActionBar().setDisplayHomeAsUpEnabled(true);
 
-        Fragment fragment = getFragmentManager().findFragmentById(com.android.settingslib.collapsingtoolbar.R.id.content_frame);
+        Fragment fragment = getSupportFragmentManager().findFragmentById(com.android.settingslib.collapsingtoolbar.R.id.content_frame);
         if (fragment == null) {
             mRealmePartsFragment = new RealmeParts();
-            getFragmentManager().beginTransaction()
+            getSupportFragmentManager().beginTransaction()
                 .add(com.android.settingslib.collapsingtoolbar.R.id.content_frame, mRealmePartsFragment)
                 .commit();
         } else {

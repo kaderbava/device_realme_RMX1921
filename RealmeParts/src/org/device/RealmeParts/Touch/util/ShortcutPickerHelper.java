@@ -107,7 +107,7 @@ public class ShortcutPickerHelper {
         if (lastFragmentId == 0) {
             mParent.startActivityForResult(pickIntent, requestCode);
         } else {
-            Fragment cFrag = mParent.getFragmentManager().findFragmentById(lastFragmentId);
+            Fragment cFrag = mParent.getSupportFragmentManager().findFragmentById(lastFragmentId);
             if (cFrag != null) {
                 mParent.startActivityFromFragment(cFrag, pickIntent, requestCode);
             }
