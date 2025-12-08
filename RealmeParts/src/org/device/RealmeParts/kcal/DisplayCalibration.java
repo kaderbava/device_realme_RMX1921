@@ -25,7 +25,6 @@ import android.preference.ListPreference;
 import android.preference.Preference;
 import android.preference.Preference.OnPreferenceChangeListener;
 import android.preference.PreferenceActivity;
-import android.preference.PreferenceManager;
 import android.preference.SwitchPreference;
 import android.app.ActionBar;
 import android.view.Menu;
@@ -33,6 +32,8 @@ import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.widget.ImageView;
 import android.widget.SeekBar;
+
+import androidx.preference.PreferenceManager;
 
 import org.device.RealmeParts.R;
 import org.device.RealmeParts.kcal.utils.SeekBarPreference;
