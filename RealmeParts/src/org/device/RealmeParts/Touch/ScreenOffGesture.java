@@ -5,7 +5,7 @@
  * you may not use this file except in compliance with the License.
  * You may obtain a copy of the License at
  *
- *      http://www.apache.org/licenses/LICENSE-2.0
+ * http://www.apache.org/licenses/LICENSE-2.0
  *
  * Unless required by applicable law or agreed to in writing, software
  * distributed under the License is distributed on an "AS IS" BASIS,
@@ -16,7 +16,9 @@
 
 package org.device.RealmeParts.Touch;
 
+import android.app.Dialog;
 import android.content.Context;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.graphics.Bitmap;
@@ -26,6 +28,7 @@ import android.view.MenuInflater;
 import android.view.MenuItem;
 
 import androidx.appcompat.app.AlertDialog;
+import androidx.fragment.app.DialogFragment;
 import androidx.preference.Preference;
 import androidx.preference.Preference.OnPreferenceChangeListener;
 import androidx.preference.Preference.OnPreferenceClickListener;
@@ -46,6 +49,8 @@ public class ScreenOffGesture extends PreferenceFragmentCompat implements
         ShortcutPickerHelper.OnPickListener {
 
     private static final String SETTINGS_METADATA_NAME = "com.android.settings";
+
+    private static final int RESULT_OK = -1;
 
     public static final String PREF_DT2W_ENABLE = "enable_dt2w";
     public static final String PREF_GESTURE_ENABLE = "enable_gestures";
@@ -97,7 +102,7 @@ public class ScreenOffGesture extends PreferenceFragmentCompat implements
     private static Utils.FilteredDeviceFeaturesArray sFinalActionDialogArray;
 
     @Override
-    public void onCreatePreferences(Bundle bundle, String s) {
+    public void onCreatePreferences(Bundle bundle, String rootKey) {
 
         mPicker = new ShortcutPickerHelper(getActivity(), this);
 
@@ -123,7 +128,7 @@ public class ScreenOffGesture extends PreferenceFragmentCompat implements
         }
 
         // Load the preferences from an XML resource
-        setPreferencesFromResource(R.xml.screen_off_gesture, rootKey);
+        setPreferencesFromResource(R.xml.screen_off_gesture, null);
         prefs = getPreferenceScreen();
 
         mEnableDt2w = (SwitchPreferenceCompat) prefs.findPreference(PREF_DT2W_ENABLE);
@@ -355,7 +360,7 @@ public class ScreenOffGesture extends PreferenceFragmentCompat implements
     }
 
     public void onActivityResult(int requestCode, int resultCode, Intent data) {
-        if (resultCode == Activity.RESULT_OK) {
+        if (resultCode == RESULT_OK) {
             if (requestCode == ShortcutPickerHelper.REQUEST_PICK_SHORTCUT
                     || requestCode == ShortcutPickerHelper.REQUEST_PICK_APPLICATION
                     || requestCode == ShortcutPickerHelper.REQUEST_CREATE_SHORTCUT) {
@@ -389,7 +394,7 @@ public class ScreenOffGesture extends PreferenceFragmentCompat implements
         DialogFragment newFragment =
                 MyAlertDialogFragment.newInstance(id, settingsKey, dialogTitle);
         newFragment.setTargetFragment(this, 0);
-        newFragment.show(getSupportFragmentManager(), "dialog " + id);
+        newFragment.show(getParentFragmentManager(), "dialog " + id);
     }
 
     public static class MyAlertDialogFragment extends DialogFragment {
