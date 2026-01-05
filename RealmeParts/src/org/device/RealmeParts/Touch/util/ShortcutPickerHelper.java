@@ -5,7 +5,7 @@
  * you may not use this file except in compliance with the License.
  * You may obtain a copy of the License at
  *
- *      http://www.apache.org/licenses/LICENSE-2.0
+ * http://www.apache.org/licenses/LICENSE-2.0
  *
  * Unless required by applicable law or agreed to in writing, software
  * distributed under the License is distributed on an "AS IS" BASIS,
@@ -16,7 +16,6 @@
 
 package org.device.RealmeParts.Touch.util;
 
-import android.app.Fragment;
 import android.content.Context;
 import android.content.Intent;
 import android.content.Intent.ShortcutIconResource;
@@ -27,6 +26,9 @@ import android.graphics.BitmapFactory;
 import android.os.Bundle;
 import android.os.Parcelable;
 
+import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentActivity;
+
 import org.device.RealmeParts.R;
 
 import java.util.ArrayList;
@@ -36,8 +38,10 @@ public class ShortcutPickerHelper {
     public static final int REQUEST_PICK_SHORTCUT = 100;
     public static final int REQUEST_PICK_APPLICATION = 101;
     public static final int REQUEST_CREATE_SHORTCUT = 102;
+    
+    private static final int RESULT_OK = -1;
 
-    private Activity mParent;
+    private Context mParent;
     private OnPickListener mListener;
     private PackageManager mPackageManager;
     private int lastFragmentId;
@@ -46,14 +50,14 @@ public class ShortcutPickerHelper {
         void shortcutPicked(String uri, String friendlyName, Bitmap bmp, boolean isApplication);
     }
 
-    public ShortcutPickerHelper(Activity parent, OnPickListener listener) {
+    public ShortcutPickerHelper(Context parent, OnPickListener listener) {
         mParent = parent;
         mPackageManager = mParent.getPackageManager();
         mListener = listener;
     }
 
     public void onActivityResult(int requestCode, int resultCode, Intent data) {
-        if (resultCode == Activity.RESULT_OK) {
+        if (resultCode == RESULT_OK) {
             switch (requestCode) {
                 case REQUEST_PICK_APPLICATION:
                     completeSetCustomApp(data);
@@ -104,12 +108,16 @@ public class ShortcutPickerHelper {
     }
 
     private void startFragmentOrActivity(Intent pickIntent, int requestCode) {
-        if (lastFragmentId == 0) {
-            mParent.startActivityForResult(pickIntent, requestCode);
-        } else {
-            Fragment cFrag = mParent.getSupportFragmentManager().findFragmentById(lastFragmentId);
-            if (cFrag != null) {
-                mParent.startActivityFromFragment(cFrag, pickIntent, requestCode);
+        if (mParent instanceof FragmentActivity) {
+            FragmentActivity activity = (FragmentActivity) mParent;
+            
+            if (lastFragmentId == 0) {
+                activity.startActivityForResult(pickIntent, requestCode);
+            } else {
+                Fragment cFrag = activity.getSupportFragmentManager().findFragmentById(lastFragmentId);
+                if (cFrag != null) {
+                    activity.startActivityFromFragment(cFrag, pickIntent, requestCode);
+                }
             }
         }
     }
@@ -170,5 +178,4 @@ public class ShortcutPickerHelper {
         mListener.shortcutPicked(appUri,
                 AppHelper.getFriendlyShortcutName(mParent, mPackageManager, intent), bmp, false);
     }
-
 }
