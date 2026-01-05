@@ -1,7 +1,7 @@
 package org.device.RealmeParts.vibrator;
 
 import com.android.settingslib.collapsingtoolbar.CollapsingToolbarBaseActivity;
-import android.app.Fragment;
+import androidx.fragment.app.Fragment;
 import android.os.Bundle;
 import android.view.MenuItem;
 
