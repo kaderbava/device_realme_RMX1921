@@ -1,4 +1,3 @@
--keep class ** extends androidx.preference.PreferenceFragment
 -keep class org.lineageos.settings.doze.* {
   *;
 }
