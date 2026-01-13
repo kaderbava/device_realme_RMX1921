@@ -112,7 +112,7 @@
     <ListPreference
         android:key="presets_list"
         android:title="@string/presets_list_title"
-        android:summary="%s"
+        app:useSimpleSummaryProvider="true"
         android:entries="@array/presets_entries"
         android:entryValues="@array/presets_values"
         android:dependency="kcal_enabled"
