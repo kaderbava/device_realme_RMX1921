@@ -368,10 +368,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/permissions/privapp_whitelist_org.device.Realmeparts.xml:system/etc/permissions/privapp_whitelist_org.device.Realmeparts.xml
 
-# Remove Unwanted Packages
-PRODUCT_PACKAGES += \
-    RemovePackages
-
 # Recovery
 PRODUCT_PACKAGES += \
     libinit_RMX1921.recovery
@@ -394,7 +390,7 @@ PRODUCT_SOONG_NAMESPACES += \
     hardware/qcom-caf/sdm845 \
     hardware/google/interfaces \
     hardware/google/pixel \
-    hardware/afterlife/interfaces/power-libperfmgr \
+    hardware/lineage/interfaces/power-libperfmgr \
     hardware/qcom-caf/common/libqti-perfd-client \
     hardware/nxp
 
