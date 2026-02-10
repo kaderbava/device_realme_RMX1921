@@ -1,12 +1,13 @@
 #
-# Copyright (C) 2020 The LineageOS Project
+# Copyright (C) 2019-2025 The LineageOS Project
 #
 # SPDX-License-Identifier: Apache-2.0
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/lineage_RMX1921.mk
+    $(LOCAL_DIR)/infinity_RMX1921.mk
 
 COMMON_LUNCH_CHOICES := \
-    lineage_RMX1921-userdebug \
-    lineage_RMX1921-eng
+    infinity_RMX1921-user \
+    infinity_RMX1921-userdebug \
+    infinity_RMX1921-eng

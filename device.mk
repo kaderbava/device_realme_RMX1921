@@ -326,7 +326,6 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COMPATIBLE_PROPERTY_OVERRIDE := true
 
 # QTI
-
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/qti_whitelist.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/sysconfig/qti_whitelist.xml \
     $(LOCAL_PATH)/configs/qti_whitelist_system_ext.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/sysconfig/qti_whitelist_system_ext.xml \
@@ -370,6 +369,13 @@ PRODUCT_COPY_FILES += \
 # Recovery
 PRODUCT_PACKAGES += \
     libinit_RMX1921.recovery
+
+# Remove Unwanted Packages
+PRODUCT_PACKAGES += \
+    RemovePackages
+
+# Scudo
+PRODUCT_USE_SCUDO := true
 
 # Seccomp policy
 PRODUCT_COPY_FILES += \
