@@ -154,3 +154,10 @@ persist.vendor.ssr.restart_level=ALL_ENABLE
 # Wi-Fi display
 persist.debug.wfd.enable=1
 persist.sys.wfd.virtual=0
+
+# Project Infinity X
+ro.product.marketname=realme XT
+ro.infinity.soc=Snapdragon 712
+ro.infinity.battery=4000 mAh
+ro.infinity.display=1080 x 2340, 60 Hz
+ro.infinity.camera=64MP + 8MP + 2MP + 2MP

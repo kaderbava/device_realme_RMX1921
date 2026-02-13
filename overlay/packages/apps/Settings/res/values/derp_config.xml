@@ -43,9 +43,6 @@
     <!-- The radius of the enrollment progress bar, in dp -->
     <integer name="config_udfpsEnrollProgressBar" translatable="false">105</integer>
 
-    <!-- Show Force LTE_CA toggle -->
-    <bool name="config_showForceLteCaToggle" translatable="false">true</bool>
-
     <!-- Show battery information -->
     <bool name="config_show_battery_info" translatable="false">false</bool>
 

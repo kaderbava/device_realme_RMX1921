@@ -1282,7 +1282,7 @@
     <bool name="config_enableHapticTextHandle">true</bool>
 
     <!-- Whether devices suports in-display fingerprint when screen is off -->
-    <bool name="config_supportsScreenOffUdfps">true</bool>
+    <bool name="config_supportScreenOffUdfps">true</bool>
 
     <!-- Pocket Lock -->
     <bool name="config_pocketModeSupported">false</bool>
@@ -1290,5 +1290,8 @@
 
     <!-- The max scale for the wallpaper when it's zoomed in -->
     <item name="config_wallpaperMaxScale" format="float" type="dimen">1.00</item>
+
+    <!-- Whether the device supports Smart Pixels -->
+    <bool name="config_supportSmartPixels">true</bool>
 
 </resources>
