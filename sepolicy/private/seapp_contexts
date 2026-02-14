@@ -1,0 +1,2 @@
+# Bluetooth
+user=bluetooth seinfo=default isPrivApp=true name=com.android.bluetooth domain=bluetooth type=bluetooth_data_file
