@@ -19,7 +19,7 @@ $(call inherit-product, vendor/realme/RMX1921/RMX1921-vendor.mk)
 $(call inherit-product, hardware/qcom-caf/common/common.mk)
 
 OVERRIDE_PRODUCT_COMPRESSED_APEX := false
-PRODUCT_OTA_ENFORCE_VINTF_KERNEL_REQUIREMENTS := true
+PRODUCT_OTA_ENFORCE_VINTF_KERNEL_REQUIREMENTS := false
 
 # Bluetooth
 PRODUCT_PACKAGES += \
