@@ -86,6 +86,8 @@ blob_fixups: blob_fixups_user_type = {
         .clear_symbol_version('remote_register_dma_handle_attr'),
     'vendor/lib64/libvidhance.so': blob_fixup()
         .add_needed('libcomparetf2_shim.so'),
+    'vendor/bin/mm-pp-dpps': blob_fixup()
+        .replace_needed('libtinyxml2.so', 'libtinyxml2-v34.so'),
 }  # fmt: skip
 
 module = ExtractUtilsModule(
