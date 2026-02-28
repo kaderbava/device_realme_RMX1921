@@ -3,7 +3,7 @@ package org.device.RealmeParts.vibrator;
 import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
-import androidx.preference.PreferenceFragmentCompat;
+import com.android.settingslib.widget.SettingsBasePreferenceFragment;
 import androidx.preference.Preference;
 import androidx.preference.PreferenceCategory;
 
@@ -12,7 +12,7 @@ import org.device.RealmeParts.vibrator.utils.VibrateFileUtils;
 
 import org.device.RealmeParts.R;
 
-public class VibratorSettings extends PreferenceFragmentCompat implements
+public class VibratorSettings extends SettingsBasePreferenceFragment implements
         Preference.OnPreferenceChangeListener {
 
     public static final String PREF_CALL_LEVEL = "vibration_strength_call";
