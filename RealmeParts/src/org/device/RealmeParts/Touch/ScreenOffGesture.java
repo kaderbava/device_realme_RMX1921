@@ -32,7 +32,7 @@ import androidx.fragment.app.DialogFragment;
 import androidx.preference.Preference;
 import androidx.preference.Preference.OnPreferenceChangeListener;
 import androidx.preference.Preference.OnPreferenceClickListener;
-import androidx.preference.PreferenceFragmentCompat;
+import com.android.settingslib.widget.SettingsBasePreferenceFragment;
 import androidx.preference.PreferenceScreen;
 import androidx.preference.SwitchPreferenceCompat;
 
@@ -44,7 +44,7 @@ import org.device.RealmeParts.Touch.util.ShortcutPickerHelper;
 import org.device.RealmeParts.Touch.util.Utils;
 
 
-public class ScreenOffGesture extends PreferenceFragmentCompat implements
+public class ScreenOffGesture extends SettingsBasePreferenceFragment implements
         OnPreferenceChangeListener, OnPreferenceClickListener,
         ShortcutPickerHelper.OnPickListener {
 
