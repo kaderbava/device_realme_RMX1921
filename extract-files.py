@@ -57,6 +57,8 @@ blob_fixups: blob_fixups_user_type = {
     'system_ext/lib/libwfdservice.so': blob_fixup()
         .add_needed('libaudioclient_shim.so')
         .replace_needed('android.media.audio.common.types-V3-cpp.so', 'android.media.audio.common.types-V4-cpp.so'),
+    'system_ext/lib64/libwfdnative.so': blob_fixup()
+        .add_needed('libinput_shim.so'),
     'vendor/etc/seccomp_policy/atfwd@2.0.policy': blob_fixup()
          .add_line_if_missing('gettid: 1'),
     'vendor/lib64/libarcsoft_relighting_pro_image.so': blob_fixup()
