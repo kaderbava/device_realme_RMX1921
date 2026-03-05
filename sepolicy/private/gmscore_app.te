@@ -1,1 +1,2 @@
 get_prop(gmscore_app, system_adbd_prop)
+get_prop(gmscore_app, adbd_prop)
