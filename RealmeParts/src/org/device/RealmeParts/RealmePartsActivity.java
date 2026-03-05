@@ -20,12 +20,7 @@ package org.device.RealmeParts;
 import com.android.settingslib.collapsingtoolbar.CollapsingToolbarBaseActivity;
 import androidx.fragment.app.Fragment;
 import android.os.Bundle;
-import android.view.Menu;
-import android.view.MenuInflater;
 import android.view.MenuItem;
-import androidx.appcompat.app.AlertDialog;
-import com.android.settingslib.widget.SettingsBasePreferenceFragment;
-import androidx.preference.PreferenceManager;
 
 public class RealmePartsActivity extends CollapsingToolbarBaseActivity {
 
@@ -52,12 +47,9 @@ public class RealmePartsActivity extends CollapsingToolbarBaseActivity {
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
-        switch (item.getItemId()) {
-        case android.R.id.home:
+        if (item.getItemId() == android.R.id.home) {
             finish();
             return true;
-        default:
-            break;
         }
         return super.onOptionsItemSelected(item);
     }
