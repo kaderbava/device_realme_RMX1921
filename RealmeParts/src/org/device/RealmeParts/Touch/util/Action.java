@@ -180,10 +180,10 @@ public class Action {
                 dispatchMediaKeyWithWakeLock(KeyEvent.KEYCODE_MEDIA_PLAY_PAUSE, context);
                 return;
             } else if (action.equals(ActionConstants.ACTION_VOLUME_DOWN)) {
-                triggerVirtualKeypress(KeyEvent.KEYCODE_VOLUME_DOWN, isLongpress);
+                triggerVirtualKeypress(context, KeyEvent.KEYCODE_VOLUME_DOWN, isLongpress);
             return;
             } else if (action.equals(ActionConstants.ACTION_VOLUME_UP)) {
-                    triggerVirtualKeypress(KeyEvent.KEYCODE_VOLUME_UP, isLongpress);
+                triggerVirtualKeypress(context, KeyEvent.KEYCODE_VOLUME_UP, isLongpress);
             return;
             } else if (action.equals(ActionConstants.ACTION_ASSIST)){
                 mSearchManagerService = ISearchManager.Stub.asInterface(ServiceManager.getService(Context.SEARCH_SERVICE));
@@ -323,8 +323,8 @@ public class Action {
         }
     }
 
-    public static void triggerVirtualKeypress(final int keyCode, boolean longpress) {
-        InputManager im = InputManager.getInstance();
+    public static void triggerVirtualKeypress(Context context, final int keyCode, boolean longpress) {
+        InputManager im = (InputManager) context.getSystemService(Context.INPUT_SERVICE);
         long now = SystemClock.uptimeMillis();
         int downflags = 0;
         int upflags = 0;

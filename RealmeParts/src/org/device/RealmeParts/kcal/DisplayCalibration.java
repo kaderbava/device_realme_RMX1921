@@ -179,16 +179,16 @@ public class DisplayCalibration extends PreferenceActivity implements
 
     @Override
     public boolean onOptionsItemSelected (MenuItem item) {
-        switch (item.getItemId()) {
-            case android.R.id.home:
-                finish();
-                return true;
-            case R.id.menu_reset:
-                reset();
-                return true;
-            default:
-                break;
+        int id = item.getItemId();
+        
+        if (id == android.R.id.home) {
+            finish();
+            return true;
+        } else if (id == R.id.menu_reset) {
+            reset();
+            return true;
         }
+        
         return super.onOptionsItemSelected(item);
     }
 
