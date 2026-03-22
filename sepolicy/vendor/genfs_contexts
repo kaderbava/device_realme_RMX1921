@@ -27,7 +27,6 @@ genfscon proc /devinfo        u:object_r:proc_devinfo:s0
 genfscon sysfs /devices/platform/soc/ae00000.qcom,mdss_mdp/drm/card0/sde-crtc-0/measured_fps        u:object_r:sysfs_graphics:s0
 
 # Power Hal
-genfscon proc /sys/kernel/sched_autogroup_enabled     u:object_r:proc_sched:s0
 genfscon proc /sys/kernel/sched_boost                 u:object_r:proc_sched:s0
 genfscon sysfs /devices/platform/soc/ae00000.qcom,mdss_mdp/idle_encoder_mask                        u:object_r:sysfs_graphics:s0
 genfscon sysfs /devices/platform/soc/ae00000.qcom,mdss_mdp/idle_state                               u:object_r:sysfs_graphics:s0
@@ -46,3 +45,13 @@ genfscon proc /wakelocks                              u:object_r:proc_wakelocks:
 # Extcon
 genfscon sysfs /devices/platform/vendor/vendor:extcon_usb1/extcon/extcon3/cable.0/     u:object_r:sysfs_extcon:s0
 genfscon sysfs /devices/platform/vendor/vendor:extcon_usb1/extcon/extcon3/cable.1/     u:object_r:sysfs_extcon:s0
+
+# Axion Performance mode
+genfscon proc /sys/vm/dirty_writeback_centisecs u:object_r:proc_dirty:s0
+genfscon proc /sys/vm/vfs_cache_pressure u:object_r:proc_drop_caches:s0
+genfscon proc /sys/kernel/sched_migration_cost_ns   u:object_r:proc_sched:s0
+genfscon proc /sys/kernel/sched_pelt_multiplier                          u:object_r:proc_sched:s0
+
+# Axion GPU boost
+genfscon sysfs /sys/class/kgsl/kgsl-3d0/devfreq/available_frequencies u:object_r:sysfs_gpu:s0
+genfscon sysfs /sys/class/kgsl/kgsl-3d0/devfreq/min_freq u:object_r:sysfs_gpu:s0
