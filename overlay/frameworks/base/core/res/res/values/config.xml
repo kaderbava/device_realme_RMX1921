@@ -1241,4 +1241,8 @@
     <!-- Whether the new Auto Selection Network UI should be shown -->
     <bool name="config_enableNewAutoSelectNetworkUI">true</bool>
 
+    <!-- Pocket Lock -->
+    <bool name="config_pocketModeSupported">false</bool>
+    <bool name="config_pocketUseLightSensor">false</bool>
+
 </resources>

@@ -24,6 +24,15 @@
     <!-- Doze: does this device support STATE_DOZE?  -->
     <bool name="doze_display_state_supported">true</bool>
 
+    <!-- FPSInfoService Fps file path -->
+    <string name="config_fpsInfoSysNode" translatable="false">/sys/class/drm/sde-crtc-0/measured_fps</string>
+
+    <!-- The CPU temperature sensor path, defaults to empty -->
+    <string name="config_cpuTempSensor" translatable="false">/sys/class/thermal/thermal_zone3/temp</string>
+
+    <!-- The CPU temperature divider, if needed -->
+    <integer name="config_cpuTempDivider" translatable="false">1000</integer>
+
     <!-- Whether to show a warning notification when device's skin temperature is high. -->
     <integer name="config_showTemperatureWarning">1</integer>
 

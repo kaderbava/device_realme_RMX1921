@@ -1,15 +1,21 @@
 #
-# Copyright (C) 2021-2022 The LineageOS Project
+# Copyright (C) 2021-2026 The LineageOS Project
 #
 # SPDX-License-Identifier: Apache-2.0
 #
 
-# Inherit some common LineageOS stuff
+# Inherit some common DerpFest stuff
 TARGET_BOOT_ANIMATION_RES := 1080
 $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
 # Inherit from RMX1921 device
 $(call inherit-product, $(LOCAL_PATH)/device.mk)
+
+# Official-ify
+DERPFEST_BUILD_TYPE := Official
+DERPFEST_BUILD_VARIANT := Stable
+TARGET_DISABLE_EPPE := true
+TARGET_SUPPORTS_BLUR := false
 
 PRODUCT_BRAND := realme
 PRODUCT_DEVICE := RMX1921
@@ -26,6 +32,3 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
     DeviceProduct=RMX1921 \
     SystemDevice=RMX1921 \
     SystemName=RMX1921
-
-# Sign builds
-PRODUCT_DEFAULT_DEV_CERTIFICATE := .android-certs/releasekey
