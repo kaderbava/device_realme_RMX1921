@@ -63,11 +63,6 @@ void load_dalvikvm_properties() {
     property_override("dalvik.vm.heapstartsize", "8m");
     property_override("dalvik.vm.heapgrowthlimit", "256m");
     property_override("dalvik.vm.heapmaxfree", "16m");
-    property_override("ro.lmk.psi_complete_stall_ms", "600");
-    property_override("ro.lmk.psi_partial_stall_ms", "130");
-    property_override("ro.lmk.swap_free_low_percentage", "20");
-    property_override("ro.lmk.thrashing_limit", "55");
-    property_override("ro.lmk.thrashing_limit_decay", "37");
   }
   property_override("dalvik.vm.heaptargetutilization", "0.75");
   property_override("dalvik.vm.heapsize", "512m");
