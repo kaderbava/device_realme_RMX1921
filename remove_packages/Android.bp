@@ -11,10 +11,10 @@ cc_prebuilt_binary {
         "CalendarGooglePrebuilt",
         "FilesPrebuilt",
         "talkback",
-        "UdfpsAnimations",
     ],
     strip: {
         none: true,
     },
     srcs: ["RemovePackages"],
+    check_elf_files: false,
 }
