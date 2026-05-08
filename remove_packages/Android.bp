@@ -9,12 +9,14 @@ cc_prebuilt_binary {
     overrides: [
         "GoogleCamera",
         "CalendarGooglePrebuilt",
+        "CalculatorGooglePrebuilt",
         "FilesPrebuilt",
+        "GoogleTTS",
         "talkback",
-        "UdfpsAnimations",
     ],
     strip: {
         none: true,
     },
     srcs: ["RemovePackages"],
+    check_elf_files: false,
 }
