@@ -8,6 +8,7 @@
 TARGET_BOOT_ANIMATION_RES := 1080
 TARGET_HAS_UDFPS := true
 TARGET_DISABLE_MATLOG := true
+TARGET_SUPPORTS_BLUR := false
 $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
 # Inherit from RMX1921 device
