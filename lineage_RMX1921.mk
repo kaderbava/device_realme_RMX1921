@@ -45,6 +45,3 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
     DeviceProduct=RMX1921 \
     SystemDevice=RMX1921 \
     SystemName=RMX1921
-
-# Sign builds
-PRODUCT_DEFAULT_DEV_CERTIFICATE := .android-certs/releasekey
