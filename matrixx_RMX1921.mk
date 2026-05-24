@@ -1,27 +1,28 @@
 #
-# Copyright (C) 2021-2022 The LineageOS Project
+# Copyright (C) 2021-2026 The LineageOS Project
 #
 # SPDX-License-Identifier: Apache-2.0
 #
 
-# Inherit some common LineageOS stuff
+# Inherit some common Matrixx stuff
 TARGET_BOOT_ANIMATION_RES := 1080
-TARGET_HAS_UDFPS := true
-TARGET_DISABLE_MATLOG := true
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+TARGET_ENABLE_BLUR := false
+TARGET_CUSTOM_UDFPS := true
+$(call inherit-product, vendor/matrixx/config/common_full_phone.mk)
 
 # Inherit from RMX1921 device
 $(call inherit-product, $(LOCAL_PATH)/device.mk)
 
-# Matrixx
-MATRIXX_CHIPSET := SDM712
-MATRIXX_BATTERY := 4000mAh
-MATRIXX_DISPLAY := 1080x2340
+# Matrixx-ify!
+MATRIXX_MAINTAINER := KaderBava
+WITH_BCR := true
+USE_REALITY_ENGINE := true
+TARGET_OPTIMIZED_DEXOPT := true
 
 PRODUCT_BRAND := realme
 PRODUCT_DEVICE := RMX1921
 PRODUCT_MANUFACTURER := realme
-PRODUCT_NAME := lineage_RMX1921
+PRODUCT_NAME := matrixx_RMX1921
 PRODUCT_MODEL := RMX1921
 
 PRODUCT_GMS_CLIENTID_BASE := android-oppo
