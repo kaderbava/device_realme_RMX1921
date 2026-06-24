@@ -85,9 +85,6 @@ DEVICE_MATRIX_FILE := hardware/qcom-caf/common/compatibility_matrix.xml
 # HWUI
 HWUI_COMPILE_FOR_PERF := true
 
-# Media
-TARGET_USES_ION := true
-
 # NFC
 TARGET_USES_NQ_NFC := true
 BOARD_NFC_CHIPSET := pn544
