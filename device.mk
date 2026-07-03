@@ -143,6 +143,9 @@ $(call soong_config_set,surfaceflinger,udfps_lib,//$(LOCAL_PATH):libudfps_extens
 PRODUCT_PACKAGES += \
     FM2
 
+# ION
+$(call soong_config_set_bool,libion,legacy_impl,true)
+
 # IPA
 PRODUCT_PACKAGES += \
     ipacm \
