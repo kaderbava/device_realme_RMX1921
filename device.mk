@@ -128,6 +128,9 @@ PRODUCT_DEXPREOPT_SPEED_APPS += \
 PRODUCT_PACKAGES += \
     android.hardware.drm-service.clearkey
 
+# Fastbootd
+TARGET_DISABLE_FASTBOOTD := true
+
 # Filesystem
 PRODUCT_PACKAGES += \
     e2fsck_ramdisk \
