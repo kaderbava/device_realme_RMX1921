@@ -19,14 +19,12 @@ package org.lineageos.settings.doze;
 
 import android.app.ActionBar;
 import android.content.Context;
-import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.os.Handler;
 import android.widget.CompoundButton;
 
 import com.android.settingslib.widget.MainSwitchPreference;
 
-import androidx.appcompat.app.AlertDialog;
 import androidx.preference.Preference;
 import androidx.preference.Preference.OnPreferenceChangeListener;
 import androidx.preference.PreferenceCategory;
@@ -52,12 +50,6 @@ public class DozeSettingsFragment extends SettingsBasePreferenceFragment impleme
     @Override
     public void onCreatePreferences(Bundle savedInstanceState, String rootKey) {
         setPreferencesFromResource(R.xml.doze_settings, rootKey);
-
-        SharedPreferences prefs = getActivity().getSharedPreferences("doze_settings",
-                Context.MODE_PRIVATE);
-        if (savedInstanceState == null && !prefs.getBoolean("first_help_shown", false)) {
-            showHelp();
-        }
 
         boolean dozeEnabled = DozeUtils.isDozeEnabled(getActivity());
 
@@ -131,22 +123,5 @@ public class DozeSettingsFragment extends SettingsBasePreferenceFragment impleme
         mPocketPreference.setEnabled(isChecked);
         mSmartWakePreference.setEnabled(isChecked);
         mMotionPreference.setEnabled(isChecked);
-    }
-
-    private void showHelp() {
-        AlertDialog helpDialog = new AlertDialog.Builder(getActivity())
-                .setTitle(R.string.doze_settings_help_title)
-                .setMessage(R.string.doze_settings_help_text)
-                .setPositiveButton(R.string.dialog_ok,
-                        (dialog, which) -> {
-                            getActivity()
-                                    .getSharedPreferences("doze_settings", Context.MODE_PRIVATE)
-                                    .edit()
-                                    .putBoolean("first_help_shown", true)
-                                    .commit();
-                            dialog.cancel();
-                        })
-                .create();
-        helpDialog.show();
     }
 }
