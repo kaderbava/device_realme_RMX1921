@@ -1,0 +1,12 @@
+allow platform_app_all sysfs_fps:file { getattr open read };
+allow platform_app_all sysfs_graphics:dir search;
+allow platform_app_all sysfs_graphics:file { getattr open read };
+
+get_prop(platform_app_all, oppo_debug_prop);
+get_prop(platform_app_all, boottime_prop);
+get_prop(platform_app_all, audio_config_prop)
+get_prop(platform_app_all, camera_prop)
+
+allow platform_app_all sysfs_battery_supply:dir search;
+allow platform_app_all sysfs_battery_supply:file { getattr open read };
+allow platform_app_all sysfs_kgsl:file { getattr open read };
