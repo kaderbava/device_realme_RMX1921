@@ -46,19 +46,12 @@ lib_fixups: lib_fixups_user_type = {
 }
 
 blob_fixups: blob_fixups_user_type = {
-    'system_ext/bin/wfdservice': blob_fixup()
-        .add_needed('libwfdservice_shim.so'),
+    'system_ext/lib64/libwfdservice.so': blob_fixup()
+        .replace_needed('android.media.audio.common.types-V4-cpp.so', 'android.media.audio.common.types-V5-cpp.so'),
     ('odm/lib64/mediadrm/libwvdrmengine.so', 'odm/lib64/libwvhidl.so'): blob_fixup()
         .add_needed('libcrypto_shim.so'),
     ('vendor/lib/hw/android.hardware.health@2.0-impl-2.1-qti.so', 'vendor/lib64/hw/android.hardware.health@2.0-impl-2.1-qti.so'): blob_fixup()
         .add_needed('libbase_shim.so'),
-    'system_ext/lib/libwfdmmsrc_system.so': blob_fixup()
-        .add_needed('libgui_shim.so'),
-    'system_ext/lib/libwfdservice.so': blob_fixup()
-        .add_needed('libaudioclient_shim.so')
-        .replace_needed('android.media.audio.common.types-V3-cpp.so', 'android.media.audio.common.types-V4-cpp.so'),
-    'system_ext/lib64/libwfdnative.so': blob_fixup()
-        .add_needed('libinput_shim.so'),
     'vendor/etc/seccomp_policy/atfwd@2.0.policy': blob_fixup()
          .add_line_if_missing('gettid: 1'),
     'vendor/lib64/libarcsoft_relighting_pro_image.so': blob_fixup()
