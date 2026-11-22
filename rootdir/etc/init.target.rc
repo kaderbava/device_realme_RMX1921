@@ -146,11 +146,3 @@ on property:init.svc.zygote=running
 on property:init.svc.zygote=restarting
     stop ppd
 #endif/*VENDOR_EDIT*/
-
-service vendor.contexthub-hal-1-0 /vendor/bin/hw/android.hardware.contexthub@1.0-service
-    override
-    class hal
-    interface android.hardware.contexthub@1.0::IContexthub default
-    user system
-    group system
-    disabled
