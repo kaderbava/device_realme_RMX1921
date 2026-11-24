@@ -41,7 +41,6 @@ PRODUCT_PACKAGES += \
     libqcomvisualizer \
     libqcomvoiceprocessing \
     libvolumelistener \
-    libcirrusspkrprot \
     libspkrprot \
     libhdmiedid \
     liba2dpoffload \
