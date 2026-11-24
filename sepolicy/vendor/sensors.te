@@ -1,3 +1,4 @@
 get_prop(sensors, sensors_prop)
 allow sensors diag_device:chr_file rw_file_perms;
 allow sensors sensors_persist_file:fifo_file { read open getattr };
+allow sensors sensors_vendor_data_file:fifo_file { read write open getattr };
