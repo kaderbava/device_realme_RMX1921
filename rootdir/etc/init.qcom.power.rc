@@ -236,6 +236,3 @@ on property:sys.boot_completed=1
 # If UART is on, enable console_suspend on boot_complete to save power
 on property:sys.boot_completed=1 && property:init.svc.console=running
     write /sys/module/printk/parameters/console_suspend Y
-
-on property:init.svc.recovery=running
-    trigger enable-low-power

@@ -25,6 +25,8 @@ get_prop(vendor_init, oppo_debug_prop)
 allow vendor_init system_data_file:lnk_file create;
 allow vendor_init proc_security:file write;
 allow vendor_init proc_sched:file w_file_perms;
+allow vendor_init rawdump_block_device:lnk_file setattr;
+dontaudit vendor_init debugfs_tracing_debug:file write;
 
 # Allow vendor_init to change watermark_scale_factor
 allow vendor_init proc_watermark_scale_factor:file w_file_perms;

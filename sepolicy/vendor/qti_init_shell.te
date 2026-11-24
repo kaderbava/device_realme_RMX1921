@@ -16,3 +16,5 @@ allow qti_init_shell ctl_stop_prop:property_service set;
 allow qti_init_shell { sysfs sysfs_dm }:file write;
 allow qti_init_shell proc_page_cluster:file rw_file_perms;
 allow qti_init_shell proc_watermark_scale_factor:file w_file_perms;
+allow qti_init_shell sensors_vendor_data_file:dir r_dir_perms;
+allow qti_init_shell sysfs_io_sched_tuneable:file rw_file_perms;

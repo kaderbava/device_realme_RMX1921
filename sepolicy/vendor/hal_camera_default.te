@@ -17,3 +17,7 @@ allow hal_camera_default oppo_fingerprint_prop:file { read open getattr };
 allow hal_camera_default default_prop:file { map getattr };
 allow hal_camera_default radio_prop:file { getattr };
 dontaudit hal_camera_default radio_prop:file read;
+
+hal_client_domain(hal_camera_default, hal_graphics_allocator)
+dontaudit hal_camera_default property_type:file { getattr open };
+dontaudit hal_camera_default debugfs:file r_file_perms;
