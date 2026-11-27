@@ -2,50 +2,76 @@
 genfscon sysfs /devices/platform/soc/ae00000.qcom,mdss_mdp/backlight/panel0-backlight u:object_r:sysfs_leds:s0
 
 # Oppo display
-genfscon sysfs /kernel/oppo_display      u:object_r:sysfs_oppo_display:s0
+genfscon sysfs /kernel/oppo_display u:object_r:sysfs_oppo_display:s0
 genfscon sysfs /devices/pnp0/00:00/rtc u:object_r:sysfs_rtc:s0
 genfscon sysfs /devices/platform/GFSH0007:00/rtc u:object_r:sysfs_rtc:s0
 
 # Touchpanel
-genfscon proc /touchpanel              u:object_r:proc_touchpanel:s0
+genfscon proc /touchpanel u:object_r:proc_touchpanel:s0
 
 # Oppo Project Version
-genfscon proc /oppoVersion                      u:object_r:proc_oppoversion:s0
-genfscon proc /oppoVersion/operatorName         u:object_r:proc_oppoversion:s0
+genfscon proc /oppoVersion u:object_r:proc_oppoversion:s0
+genfscon proc /oppoVersion/operatorName u:object_r:proc_oppoversion:s0
 
 # Oppo FP
-genfscon proc /fp_id                     u:object_r:proc_oppo_fp:s0
+genfscon proc /fp_id u:object_r:proc_oppo_fp:s0
+
+# KGSL (GPU)
+genfscon sysfs /devices/platform/soc/5000000.qcom,kgsl-3d0/kgsl/kgsl-3d0 u:object_r:sysfs_kgsl:s0
+genfscon sysfs /devices/platform/soc/5000000.qcom,kgsl-3d0/devfreq/5000000.qcom,kgsl-3d0 u:object_r:sysfs_kgsl:s0
+genfscon sysfs /devices/platform/soc/5000000.qcom,kgsl-3d0/kgsl/kgsl-3d0/snapshot u:object_r:sysfs_kgsl_snapshot:s0
+genfscon sysfs /devices/platform/soc/5000000.qcom,kgsl-3d0/kgsl/kgsl-3d0/gpu_model u:object_r:sysfs_kgsl_gpu_model:s0
+genfscon sysfs /devices/platform/soc/5000000.qcom,kgsl-3d0/kgsl/kgsl-3d0/gpuclk u:object_r:vendor_sysfs_kgsl_gpuclk:s0
 
 # RTC
-genfscon sysfs /sys/devices/platform/soc/c440000.qcom,spmi/spmi-0/spmi0-00/c440000.qcom,spmi:qcom,pm660@0:qcom,pm660_rtc/rtc/rtc0/hctosys        u:object_r:sysfs_rtc:s0
-genfscon sysfs /sys/class/rtc/rtc0/hctosys        u:object_r:sysfs_rtc:s0
+genfscon sysfs /devices/platform/soc/c440000.qcom,spmi/spmi-0/spmi0-00/c440000.qcom,spmi:qcom,pm660@0:qcom,pm660_rtc/rtc/rtc0/hctosys u:object_r:sysfs_rtc:s0
 
-# Power supply
-genfscon sysfs /devices/platform/soc/c440000.qcom,spmi/spmi-0/spmi0-00/c440000.qcom,spmi:qcom,pm660@0:qcom,qpnp-smb2/power_supply/ac   u:object_r:sysfs_batteryinfo:s0
+# Power supply / Smart charging / IIO
+genfscon sysfs /devices/platform/soc/c440000.qcom,spmi/spmi-0/spmi0-00/c440000.qcom,spmi:qcom,pm660@0:qcom,qpnp-smb2/power_supply/ac u:object_r:sysfs_batteryinfo:s0
+genfscon sysfs /devices/platform/soc/c440000.qcom,spmi/spmi-0/spmi0-00/c440000.qcom,spmi:qcom,pm660@0:qcom,qpnp-smb2/power_supply/battery/mmi_charging_enable u:object_r:sysfs_scharge:s0
+genfscon sysfs /devices/platform/soc/c440000.qcom,spmi/spmi-0/spmi0-00/c440000.qcom,spmi:qcom,pm660@0:rradc@4500/iio:device0/name u:object_r:sysfs_iio:s0
 
 # Devinfo
-genfscon proc /devinfo        u:object_r:proc_devinfo:s0
+genfscon proc /devinfo u:object_r:proc_devinfo:s0
 
 # FPS info
-genfscon sysfs /devices/platform/soc/ae00000.qcom,mdss_mdp/drm/card0/sde-crtc-0/measured_fps        u:object_r:sysfs_graphics:s0
+genfscon sysfs /devices/platform/soc/ae00000.qcom,mdss_mdp/drm/card0/sde-crtc-0/measured_fps u:object_r:sysfs_fps:s0
 
 # Power Hal
-genfscon proc /sys/kernel/sched_autogroup_enabled     u:object_r:proc_sched:s0
-genfscon proc /sys/kernel/sched_boost                 u:object_r:proc_sched:s0
-genfscon sysfs /devices/platform/soc/ae00000.qcom,mdss_mdp/idle_encoder_mask                        u:object_r:sysfs_graphics:s0
-genfscon sysfs /devices/platform/soc/ae00000.qcom,mdss_mdp/idle_state                               u:object_r:sysfs_graphics:s0
-genfscon sysfs /devices/platform/soc/ae00000.qcom,mdss_mdp/idle_timeout_ms                          u:object_r:sysfs_graphics:s0
-genfscon sysfs /devices/platform/soc/soc:qcom,dsi-display                                           u:object_r:sysfs_graphics:s0
-genfscon sysfs /devices/platform/soc/62400000.qcom,lpass/subsys[0-9]/restart_level        u:object_r:sysfs_restart:s0
-genfscon sysfs /bus/msm_subsys/devices/subsys[0-9]/restart_level        u:object_r:sysfs_restart:s0
+genfscon proc /sys/kernel/sched_autogroup_enabled u:object_r:proc_sched:s0
+genfscon proc /sys/kernel/sched_boost u:object_r:proc_sched:s0
+genfscon sysfs /devices/platform/soc/ae00000.qcom,mdss_mdp/idle_encoder_mask u:object_r:sysfs_graphics:s0
+genfscon sysfs /devices/platform/soc/ae00000.qcom,mdss_mdp/idle_state u:object_r:sysfs_graphics:s0
+genfscon sysfs /devices/platform/soc/ae00000.qcom,mdss_mdp/idle_timeout_ms u:object_r:sysfs_graphics:s0
+genfscon sysfs /devices/platform/soc/soc:qcom,dsi-display u:object_r:sysfs_graphics:s0
+
+# I/O Scheduler (UFS sda-sdf)
+genfscon sysfs /devices/platform/soc/1d84000.ufshc/host0/target0:0:0/0:0:0:0/block/sda/queue u:object_r:sysfs_io_sched_tuneable:s0
+genfscon sysfs /devices/platform/soc/1d84000.ufshc/host0/target0:0:0/0:0:0:1/block/sdb/queue u:object_r:sysfs_io_sched_tuneable:s0
+genfscon sysfs /devices/platform/soc/1d84000.ufshc/host0/target0:0:0/0:0:0:2/block/sdc/queue u:object_r:sysfs_io_sched_tuneable:s0
+genfscon sysfs /devices/platform/soc/1d84000.ufshc/host0/target0:0:0/0:0:0:3/block/sdd/queue u:object_r:sysfs_io_sched_tuneable:s0
+genfscon sysfs /devices/platform/soc/1d84000.ufshc/host0/target0:0:0/0:0:0:4/block/sde/queue u:object_r:sysfs_io_sched_tuneable:s0
+genfscon sysfs /devices/platform/soc/1d84000.ufshc/host0/target0:0:0/0:0:0:5/block/sdf/queue u:object_r:sysfs_io_sched_tuneable:s0
+
+# UIO
+genfscon sysfs /devices/platform/soc/0.qcom,oembackup_sharedmem/uio u:object_r:sysfs_uio_file:s0
+genfscon sysfs /devices/platform/soc/0.qcom,rmtfs_sharedmem/uio u:object_r:sysfs_uio_file:s0
+
+# KCAL
+genfscon sysfs /module/msm_drm/parameters u:object_r:proc_kcal_file:s0
+
+# Vibrator
+genfscon sysfs /devices/platform/soc/c440000.qcom,spmi/spmi-0/spmi0-01/c440000.qcom,spmi:qcom,pm660@1:qcom,haptics@c000/leds/vibrator/vmax_mv_call u:object_r:proc_vibration_file:s0
+genfscon sysfs /devices/platform/soc/c440000.qcom,spmi/spmi-0/spmi0-01/c440000.qcom,spmi:qcom,pm660@1:qcom,haptics@c000/leds/vibrator/vmax_mv_strong u:object_r:proc_vibration_file:s0
+genfscon sysfs /devices/platform/soc/c440000.qcom,spmi/spmi-0/spmi0-01/c440000.qcom,spmi:qcom,pm660@1:qcom,haptics@c000/leds/vibrator/vmax_mv_user u:object_r:proc_vibration_file:s0
 
 # Realmeparts
 genfscon sysfs /kernel/sound_control/headphone_gain u:object_r:sysfs_hgain:s0
 genfscon sysfs /kernel/sound_control/mic_gain u:object_r:sysfs_mgain:s0
 
 # Wakelock stats
-genfscon proc /wakelocks                              u:object_r:proc_wakelocks:s0
+genfscon proc /wakelocks u:object_r:proc_wakelocks:s0
 
 # Extcon
-genfscon sysfs /devices/platform/vendor/vendor:extcon_usb1/extcon/extcon3/cable.0/     u:object_r:sysfs_extcon:s0
-genfscon sysfs /devices/platform/vendor/vendor:extcon_usb1/extcon/extcon3/cable.1/     u:object_r:sysfs_extcon:s0
+genfscon sysfs /devices/platform/vendor/vendor:extcon_usb1/extcon/extcon3/cable.0/ u:object_r:sysfs_extcon:s0
+genfscon sysfs /devices/platform/vendor/vendor:extcon_usb1/extcon/extcon3/cable.1/ u:object_r:sysfs_extcon:s0
