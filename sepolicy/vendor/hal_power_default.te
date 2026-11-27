@@ -10,3 +10,6 @@ allow hal_power_default system_server:process setsched;
 allow hal_power_default proc:{ file lnk_file } rw_file_perms;
 allow hal_power_default device_latency:chr_file rw_file_perms;
 allow hal_power_default sysfs_devices_system_cpu:{ file lnk_file } rw_file_perms;
+
+allow hal_power_default sysfs_kgsl:dir r_dir_perms; 
+allow hal_power_default sysfs_kgsl:file rw_file_perms;
